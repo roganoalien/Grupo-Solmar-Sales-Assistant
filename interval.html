@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Interval International</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="international animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<!-- Botón para ir a Exchange.html -->
+			<div class="exchangeBtn"></div>
+			<section class="interCont animated">
+				<article class="fila01">
+					<img src="img/interval_recortados/marriot.png" alt="" class="logos animated l_01">
+					<img src="img/interval_recortados/starwood.png" alt="" class="logos animated l_02">
+					<img src="img/interval_recortados/hyatt.png" alt="" class="logos animated l_03">
+				</article>
+				<article class="fila02">
+					<img src="img/interval_recortados/four.png" alt="" class="logos animated l_04">
+					<img src="img/interval_recortados/sheraton.png" alt="" class="logos animated l_05">
+					<img src="img/interval_recortados/westin.png" alt="" class="logos animated l_06">
+					<img src="img/interval_recortados/hilton.png" alt="" class="logos animated l_07">
+				</article>
+			</section>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				//$('.international').show();
+				$('.international').addClass('fadeIn');
+				setTimeout(function(){
+					$('.l_01').css("opacity","1").addClass('slideInUp');
+					setTimeout(function(){
+						$('.l_02').css("opacity","1").addClass('slideInUp');
+						setTimeout(function(){
+							$('.l_03').css("opacity","1").addClass('slideInUp');
+							setTimeout(function(){
+								$('.l_04').css("opacity","1").addClass('slideInUp');
+								setTimeout(function(){
+									$('.l_05').css("opacity","1").addClass('slideInUp');
+									setTimeout(function(){
+										$('.l_06').css("opacity","1").addClass('slideInUp');
+										setTimeout(function(){
+											$('.l_07').css("opacity","1").addClass('slideInUp');
+										},100);
+									},100);
+								},100);
+							},100);
+						},100);
+					},100);
+				},1000);
+				$('.botonMenu').click(function(){
+					$('.international').removeClass('fadeIn').addClass('fadeOut');
+					setTimeout(function(){
+						window.location.replace("index.html");
+					},250);
+				});
+				$('.exchangeBtn').click(function(){
+					$('.international').removeClass('fadeIn').addClass('fadeOut');
+					setTimeout(function(){
+						window.location.replace("exchange.html");
+					},250);
+				});
+			});
+		</script>
+	</body>
+</html>

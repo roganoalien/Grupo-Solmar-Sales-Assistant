@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Future Vacations</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+		<style>
+			.botonMenu{
+				z-index: 999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contenedorFv animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<!-- <img src="img/future/bolsa.png" alt="bolsa" class="bolsaF"> -->
+			<img src="img/future/bolsa_fondo.png" alt="bolsa" class="bolsaA objeto2 animated">
+			<div class="bolsaF animated objeto"></div>
+			<div class="fill objeto2 animated"></div>
+			<div class="coliseo objeto2 animated"></div>
+			<div class="modalBox animated coliseoMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="torrePisa objeto2 animated"></div>
+			<div class="modalBox animated torreMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="giza objeto2 animated"></div>
+			<div class="modalBox animated gizaMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="vegas objeto2 animated"></div>
+			<div class="modalBox animated vegasMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="universal objeto2 animated"></div>
+			<div class="modalBox animated universalMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="taj objeto2 animated"></div>
+			<div class="modalBox animated tajMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="kukulkan objeto2 animated"></div>
+			<div class="modalBox animated kukulkanMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="cabos objeto2 animated"></div>
+			<div class="modalBox animated cabosMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="japon objeto2 animated"></div>
+			<div class="modalBox animated japonMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="brasil objeto2 animated"></div>
+			<div class="modalBox animated brasilMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="sydney objeto2 animated"></div>
+			<div class="modalBox animated sydneyMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="york objeto2 animated"></div>
+			<div class="modalBox animated yorkMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="paris objeto2 animated"></div>
+			<div class="modalBox animated parisMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="dubai objeto2 animated"></div>
+			<div class="modalBox animated dubaiMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="triunfo objeto2 animated"></div>
+			<div class="modalBox animated triunfoMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="disney objeto2 animated"></div>
+			<div class="modalBox animated disneyMb">
+				<div class="leimage"></div>
+				<div class="leMap">
+					<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+				</div>
+			</div>
+			<div class="bigben objeto2 animated"></div>
+			<div class="modalBox animated bigbenMb">
+				<div class="leimage"></div>
+				<div class="leMap"></div>
+				<img src="img/modalbox/boton.png" alt="Close" class="cerrar">
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/futureV.js"></script>
+		<script>
+			$('.botonMenu').click(function(){
+				$('.contenedorFv').removeClass('fadeIn').addClass('fadeOut');
+				setTimeout(function(){
+					window.location.replace("index.html");
+				},250);
+			});
+		</script>
+	</body>
+</html>
+<!-- Para hacer el recorte de forma sencilla -->
+<!-- http://bennettfeely.com/clippy/ -->

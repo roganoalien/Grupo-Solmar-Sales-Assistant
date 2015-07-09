@@ -1,0 +1,2436 @@
+/*
+-- Grid System
+*/
+.section {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.col:first-child {
+  margin-left: 0;
+}
+.group {
+  zoom: 1;
+}
+.group:before {
+  content: "";
+  display: table;
+}
+.group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.span_1_of_1 {
+height
+  width: 684px;
+}
+.span_1_of_2 {
+  height: 149px;
+  width: 683px;
+}
+.span_6_of_9 {
+  height: 158px;
+  width: 795px;
+}
+.span_3_of_9 {
+  height: 158px;
+  width: 570px;
+}
+/*
+-- Font
+*/
+@font-face {
+  font-family: 'carmina';
+  src: url("fonts/carminam-webfont.eot");
+  src: url("fonts/carminam-webfont.eot?#iefix") format('embedded-opentype'), url("fonts/carminam-webfont.woff2") format('woff2'), url("fonts/carminam-webfont.woff") format('woff'), url("fonts/carminam-webfont.ttf") format('truetype'), url("fonts/carminam-webfont.svg#carmina_md_btmedium") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+-- Estilo
+*/
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/*
+	Botón para regresar al Menú principal
+*/
+.botonMenu {
+  background: transparent;
+  cursor: pointer;
+  height: 125px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  z-index: 99;
+}
+.exchangeBtn {
+  background: transparent;
+  bottom: 0;
+  cursor: pointer;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  width: 120px;
+  z-index: 99;
+}
+body {
+  background: #fff;
+  font-family: 'carmina';
+  font-size: 16px;
+  width: 100%;
+/*
+		Interval International Seccion
+	*/
+/*
+		RCI
+	*/
+/*
+	----Reverse Calculator
+	*/
+/*
+	----Calculator
+	*/
+/*
+	----Exchange Requests
+	*/
+/*
+	----Future Vacations
+	*/
+/*
+		Awards & Accolades
+		en otro css awards.css
+	*/
+/*
+		Platinum Membership
+	*/
+/*
+		Grand Solmar
+	*/
+/*
+		Rancho San Lucas
+	*/
+/*
+		Playa Grande
+	*/
+/*
+		The Ridge
+	*/
+/*
+		Rent vs Own
+	*/
+/*
+		Menú principal
+	*/
+}
+body .wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+body .wrapper .intervalInternational {
+  height: auto;
+  width: auto;
+}
+body .wrapper .intervalInternational .logo {
+  padding: 1em 0 0 1em;
+  position: absolute;
+}
+body .wrapper .futurePlatinum {
+  height: auto;
+  margin-left: -2px;
+  position: relative;
+  width: auto;
+}
+body .wrapper .futurePlatinum .futureVacations {
+  width: auto;
+}
+body .wrapper .futurePlatinum .futureVacations h2 {
+  color: #1267a5;
+  font-size: 1.9em;
+  font-weight: 300;
+  position: absolute;
+  right: 0.7em;
+  text-align: right;
+  top: 0.5em;
+}
+body .wrapper .futurePlatinum .futureVacations img {
+  margin: 0;
+  padding: 0;
+}
+body .wrapper .futurePlatinum .platinumMembership {
+  height: 156px;
+  width: 682px;
+}
+body .wrapper .futurePlatinum .platinumMembership h2 {
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 300;
+  position: absolute;
+  left: 0.95em;
+  text-align: left;
+  top: 5.5em;
+}
+body .wrapper .futurePlatinum .platinumMembership img {
+  margin-top: -4px;
+  padding: 0;
+}
+body .segunda .rent {
+  margin: -4px 0 0 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+body .segunda .rent h2 {
+  bottom: -0.3em;
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 300;
+  left: 0.5em;
+  position: absolute;
+}
+body .segunda .awards {
+  margin: -4px 0 0 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+body .segunda .awards h2 {
+  bottom: -0.3em;
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 300;
+  left: 1em;
+  position: absolute;
+}
+body .tercera .variety {
+  position: relative;
+}
+body .tercera .variety .uno h2 {
+  color: #000;
+  font-size: 1.9em;
+  font-weight: 300;
+  position: absolute;
+  right: 1em;
+  top: 0.1em;
+}
+body .tercera .variety .dos {
+  margin-top: -4px;
+  position: relative;
+}
+body .tercera .variety .dos h2 {
+  bottom: 0.5em;
+  color: #fff;
+  font-size: 1.9em;
+  font-weight: 300;
+  position: absolute;
+  right: 1em;
+  text-align: right;
+}
+body .tercera .variety .tres {
+  margin-top: -4px;
+  position: relative;
+}
+body .tercera .variety .tres h2 {
+  color: #1267a5;
+  font-size: 1.9em;
+  font-weight: 300;
+  left: 0.9em;
+  position: absolute;
+}
+body .tercera .activities {
+  position: relative;
+}
+body .tercera .activities h2 {
+  bottom: -0.1em;
+  color: #cc7200;
+  font-size: 1.9em;
+  font-weight: 300;
+  left: 1em;
+  position: absolute;
+}
+body .international {
+  background: url("../img/bg_interval.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  position: relative;
+  width: 1024px;
+}
+body .international .interCont {
+  height: 447px;
+  margin-top: 325px;
+  padding: 0 0 0 1em;
+  width: 777px;
+}
+body .international .interCont .fila01 {
+  margin-left: -70px;
+  padding-top: 100px;
+  text-align: center;
+}
+body .international .interCont .fila01 img {
+  margin: 0 20px;
+  vertical-align: middle;
+}
+body .international .interCont .fila01 .logos {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+body .international .interCont .fila02 {
+  margin-left: -60px;
+  padding: 1.5em 0;
+  text-align: center;
+}
+body .international .interCont .fila02 img {
+  margin: 0 20px;
+  vertical-align: middle;
+}
+body .international .interCont .fila02 .logos {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+body .contenedorRci {
+  background: url("../img/bg_rci.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRci .interRci {
+  height: 447px;
+  margin-top: 325px;
+  padding: 0 0 0 1em;
+  width: 100%;
+}
+body .contenedorRci .interRci .fila01 {
+  display: none;
+  margin-left: -50px;
+  padding-top: 70px;
+  text-align: center;
+}
+body .contenedorRci .interRci .fila01 img {
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+body .contenedorRci .interRci .fila02 {
+  display: none;
+  margin-left: -130px;
+  padding-top: 0.5em;
+  text-align: center;
+}
+body .contenedorRci .interRci .fila02 img {
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+body .contenedorRci .interRci .fila02 .corto00 {
+  margin: 0 0 0 -0.3em;
+}
+body .contenedorRci .interRci .fila02 .corto01 {
+  margin: 0 0 0 -1em;
+}
+body .contenedorRci .interRci .fila02 .corto02 {
+  margin: 0 0 0 -2em;
+}
+body .contenedorRci .interRci .fila02 .corto03 {
+  margin: 0 0 0 -0.5em;
+}
+body .contenedorRci .interRci .fila03 {
+  display: none;
+  margin-left: -150px;
+  padding-top: 1em;
+  text-align: center;
+}
+body .contenedorRci .interRci .fila03 img {
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+body .contenedorRc {
+  background: url("../img/bg_reverse_calculator.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 748px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRc .preguntas {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 170px 0 0 0;
+  text-align: center;
+  width: 861px;
+}
+body .contenedorRc .preguntas .iniciales {
+  background: #faf3ee;
+  border: 3px solid rgba(207,148,97,0.58);
+  color: #6f4042;
+  font-size: 21px;
+  outline: none;
+  padding: 13.5px 0;
+  text-align: center;
+  transition: border 0.5s ease-in-out;
+  width: 427px;
+}
+body .contenedorRc .preguntas .iniciales:focus {
+  border: 3px solid #cf9461;
+}
+body .contenedorRc .preguntas ::-webkit-input-placeholder {
+  color: #6f4042;
+}
+body .contenedorRc .preguntas .flexStuff {
+  margin-top: 15px;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda {
+  float: left;
+  width: 433px;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .singleP {
+  color: #6f4042;
+  font-size: 18px;
+  text-align: right;
+  margin: 32px 0 0 0;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .singleP:first-child {
+  margin-top: 12px;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .singlePdos {
+  color: #6f4042;
+  font-size: 18px;
+  text-align: right;
+  margin: 35px 0 0 0;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .dobleP {
+  color: #6f4042;
+  font-size: 18px;
+  margin: 22px 0 0 0;
+  text-align: right;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .doblePdos {
+  color: #6f4042;
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  text-align: right;
+}
+body .contenedorRc .preguntas .flexStuff .izquierda .doblePtres,
+body .contenedorRc .preguntas .flexStuff .izquierda .doblePcuatro,
+body .contenedorRc .preguntas .flexStuff .izquierda .doblePcinco {
+  color: #6f4042;
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  text-align: right;
+}
+body .contenedorRc .preguntas .flexStuff .derecha {
+  float: left;
+  padding-left: 15px;
+  position: relative;
+  width: 428px;
+}
+body .contenedorRc .preguntas .flexStuff .derecha input {
+  background: #faf3ee;
+  border: 3px solid rgba(207,148,97,0.58);
+  border-radius: none;
+  color: #6f4042;
+  display: block;
+  height: 40px;
+  margin-bottom: 16px;
+  outline: none;
+  text-align: center;
+  transition: border 0.5s ease-in-out;
+  width: 195px;
+}
+body .contenedorRc .preguntas .flexStuff .derecha input:focus {
+  border: 3px solid #cf9461;
+}
+body .contenedorRc .preguntas .flexStuff .derecha .botonRc {
+  background: #faf3ee;
+  border: 3px solid rgba(207,148,97,0.58);
+  bottom: 15px;
+  height: 61px;
+  position: absolute;
+  right: 0;
+  transition: border 0.5s ease-in-out;
+  width: 167px;
+  z-index: 99;
+}
+body .contenedorRc .preguntas .flexStuff .derecha .botonRc:hover {
+  border: 3px solid #cf9461;
+}
+body .contenedorRc .respuestas {
+  display: none;
+  height: 748px;
+  left: 50%;
+  margin: 0 auto 0 -430.5px;
+  padding: 170px 0 0 0;
+  position: absolute;
+  top: 0;
+  width: 861px;
+}
+body .contenedorRc .respuestas .cuadros {
+  display: -webkit-flex;
+}
+body .contenedorRc .respuestas .cuadros .ownership {
+  background: #fff;
+  border: 9px solid rgba(207,148,97,0.58);
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.1), inset 3px 3px 5px 4px rgba(0,0,0,0.15);
+  height: 372px;
+  margin-right: 20px;
+  width: 420.5px;
+}
+body .contenedorRc .respuestas .cuadros .ownership h2 {
+  color: #6f4042;
+  font-size: 42px;
+  margin-top: 27px;
+  text-align: center;
+}
+body .contenedorRc .respuestas .cuadros .ownership .infoCont {
+  display: -webkit-flex;
+  margin-top: -7px;
+}
+body .contenedorRc .respuestas .cuadros .ownership .infoCont .ladoIzO {
+  color: #cf9461;
+  margin-right: 0.5em;
+  width: 70%;
+}
+body .contenedorRc .respuestas .cuadros .ownership .infoCont .ladoIzO p {
+  margin: 6px 0;
+  text-align: right;
+}
+body .contenedorRc .respuestas .cuadros .ownership .infoCont .ladoDeO {
+  color: #d71d24;
+  margin-left: 0.5em;
+  width: 30%;
+}
+body .contenedorRc .respuestas .cuadros .ownership .infoCont .ladoDeO p {
+  margin: 6px 0;
+  text-align: left;
+}
+body .contenedorRc .respuestas .cuadros .ownership .cifraO {
+  color: #6f4042;
+  font-size: 50px;
+  margin-top: 13px;
+  text-align: center;
+}
+body .contenedorRc .respuestas .cuadros .ownership h3 {
+  color: #6f4042;
+  font-size: 20px;
+  line-height: 1.25em;
+  margin: -1.5em;
+  text-align: center;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership {
+  background: #fff;
+  border: 9px solid rgba(207,148,97,0.58);
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.1), inset 3px 3px 5px 4px rgba(0,0,0,0.15);
+  height: 372px;
+  width: 420.5px;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership h2 {
+  color: #6f4042;
+  font-size: 42px;
+  margin-top: 27px;
+  text-align: center;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .infoCont {
+  display: -webkit-flex;
+  margin-top: -7px;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .infoCont .ladoIzN {
+  color: #d71d24;
+  margin-right: 0.5em;
+  width: 25%;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .infoCont .ladoIzN p {
+  margin: 6px 0;
+  text-align: right;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .infoCont .ladoDeN {
+  color: #cf9461;
+  margin-left: 0.5em;
+  width: 75%;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .infoCont .ladoDeN p {
+  margin: 6px 0;
+  text-align: left;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership .cifraN {
+  color: #6f4042;
+  font-size: 50px;
+  margin-top: 13px;
+  text-align: center;
+}
+body .contenedorRc .respuestas .cuadros .non-ownership h3 {
+  color: #6f4042;
+  font-size: 20px;
+  line-height: 1.25em;
+  margin: -1.5em;
+  text-align: center;
+}
+body .contenedorRc .respuestas .ahorros {
+  color: rgba(111,64,66,0.7);
+  font-size: 80px;
+  margin-top: 60px;
+  text-align: center;
+}
+body .contenedorRc .respuestas h3 {
+  color: #e8a973;
+  font-size: 20px;
+  margin: -45px 0 0 0;
+  text-align: center;
+}
+body .contenedorC {
+  background: url("../img/bg_calculator.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 748px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorC .preguntasC {
+  height: 748px;
+  margin: 0 auto;
+  padding: 170px 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 861px;
+}
+body .contenedorC .preguntasC .iniciales {
+  background: #f3f9fd;
+  border: 3px solid rgba(18,103,165,0.2);
+  color: #1267a5;
+  font-size: 21px;
+  outline: none;
+  padding: 13.5px 0;
+  text-align: center;
+  transition: border 0.5s ease-in-out;
+  width: 612px;
+}
+body .contenedorC .preguntasC .iniciales:focus {
+  border: 3px solid rgba(18,103,165,0.58);
+}
+body .contenedorC .preguntasC ::-webkit-input-placeholder {
+  color: #1267a5;
+}
+body .contenedorC .preguntasC .flexStuff {
+  margin-top: 53px;
+}
+body .contenedorC .preguntasC .flexStuff .izquierda {
+  float: left;
+  width: 433px;
+}
+body .contenedorC .preguntasC .flexStuff .izquierda p {
+  color: #1267a5;
+  font-size: 18px;
+  text-align: right;
+  margin: 35px 0 0 0;
+}
+body .contenedorC .preguntasC .flexStuff .izquierda p:first-child {
+  margin-top: 15px;
+}
+body .contenedorC .preguntasC .flexStuff .izquierda .ultimo {
+  margin-top: 40px;
+}
+body .contenedorC .preguntasC .flexStuff .derecha {
+  float: left;
+  padding-left: 15px;
+  position: relative;
+  width: 428px;
+}
+body .contenedorC .preguntasC .flexStuff .derecha input {
+  background: #f3f9fd;
+  border: 3px solid rgba(18,103,165,0.2);
+  border-radius: none;
+  color: #1267a5;
+  display: block;
+  height: 45px;
+  margin-bottom: 16px;
+  outline: none;
+  text-align: center;
+  transition: border 0.5s ease-in-out;
+  width: 290px;
+}
+body .contenedorC .preguntasC .flexStuff .derecha input:focus {
+  border: 3px solid rgba(18,103,165,0.58);
+}
+body .contenedorC .preguntasC .flexStuff .derecha .elPrint {
+  margin-top: 110px;
+  width: 290px;
+}
+body .contenedorC .preguntasC .flexStuff .derecha .elPrint .printCalculator {
+  background: #f3f9fd;
+  border: 3px solid rgba(18,103,165,0.2);
+  height: 70px;
+  transition: border 0.5s ease-in-out;
+  width: 167px;
+  z-index: 99;
+}
+body .contenedorC .preguntasC .flexStuff .derecha .elPrint .printCalculator:hover {
+  border: 3px solid rgba(18,103,165,0.58);
+}
+body .contenedorC .preguntasC .flexStuff .derecha .elPrint .printCalculator img {
+  vertical-align: middle;
+}
+body .contenedorC .preguntasC .respuestaC {
+  display: none;
+  bottom: 53px;
+  position: absolute;
+  width: 433px;
+}
+body .contenedorC .preguntasC .respuestaC .izquierdaD {
+  float: left;
+  margin: 0em 0 -1em 175px;
+  padding: 0;
+  text-align: right;
+}
+body .contenedorC .preguntasC .respuestaC .izquierdaD p {
+  color: #1267a5;
+  font-size: 1.5em;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+body .contenedorC .preguntasC .respuestaC .derechaD {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+body .contenedorC .preguntasC .respuestaC .derechaD p {
+  color: #d71d24;
+  font-size: 1.5em;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+}
+body .contenedorEx {
+  background: url("../img/bg_exchange_request.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  display: -webkit-flex;
+  display: none;
+  height: 748px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-top: 165px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorEx .subtitulo {
+  bottom: 125px;
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: 110px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+body .contenedorEx .pie01 {
+  display: none;
+  margin-left: 23em;
+}
+body .contenedorEx .pie01 section {
+  width: 400px;
+  margin: 30px auto;
+}
+body .contenedorEx .pie01 section h1 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: -1em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+body .contenedorEx .pie01 section article {
+  margin-top: 60px;
+}
+body .contenedorEx .pie01 section article .pieID {
+  display: block;
+  vertical-align: top;
+}
+body .contenedorEx .pie01 section article .pie {
+  height: 200px;
+  margin: 1 30px 30px 0;
+  position: relative;
+  width: 200px;
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+body .contenedorEx .pie01 section article .pie:before {
+  content: "";
+  display: block;
+  position: absolute;
+  box-shadow: inset 3px 3px 10px 3px rgba(0,0,0,0.4);
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: url("../img/exchange_nube.png");
+  background-color: #4ba0d8;
+  background-size: cover;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+body .contenedorEx .pie01 section article .pie:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+}
+body .contenedorEx .pie01 section article .slice {
+  animation: bake-pie 1s;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+body .contenedorEx .pie01 section article .slice span {
+  background-color: #000;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+body .contenedorEx .pie01 section article .legend {
+  list-style-type: none;
+}
+body .contenedorEx .pie01 section article .legend li {
+  color: #fff;
+  position: absolute;
+}
+body .contenedorEx .pie01 section article .legend .b01 {
+  color: #fff;
+  right: 350px;
+  top: 300px;
+  z-index: 9;
+}
+body .contenedorEx .pie01 section article .legend .b01 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b01 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b01 span:after {
+  content: "%";
+}
+body .contenedorEx .pie01 section article .legend .b02 {
+  color: #fff;
+  right: 570px;
+  top: 480px;
+  z-index: 9;
+}
+body .contenedorEx .pie01 section article .legend .b02 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b02 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b02 span:after {
+  content: "%";
+}
+body .contenedorEx .pie01 section article .legend .b03 {
+  color: #fff;
+  right: 650px;
+  top: 280px;
+  z-index: 9;
+}
+body .contenedorEx .pie01 section article .legend .b03 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b03 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie01 section article .legend .b03 span:after {
+  content: "%";
+}
+body .contenedorEx .pie01 section article .legend em {
+  font-style: normal;
+}
+body .contenedorEx .pie02 {
+  display: none;
+  margin-left: 0;
+}
+body .contenedorEx .pie02 section {
+  width: 400px;
+  margin: 30px auto;
+}
+body .contenedorEx .pie02 section h1 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-left: -1.1em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+body .contenedorEx .pie02 section article {
+  margin-top: 60px;
+}
+body .contenedorEx .pie02 section article .pieID2 {
+  display: block;
+  vertical-align: top;
+}
+body .contenedorEx .pie02 section article .pie2 {
+  height: 200px;
+  margin: 1 30px 30px 0;
+  position: relative;
+  width: 200px;
+  box-shadow: 3px 3px 10px 0 rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
+body .contenedorEx .pie02 section article .pie2:before {
+  content: "";
+  display: block;
+  box-shadow: inset 3px 3px 10px 0 rgba(0,0,0,0.4);
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: url("../img/exchange_nube.png");
+  background-color: #4ba0d8;
+  background-size: cover;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+body .contenedorEx .pie02 section article .pie2:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+}
+body .contenedorEx .pie02 section article .slice2 {
+  animation: bake-pie 1s;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 200px;
+  position: absolute;
+  width: 200px;
+}
+body .contenedorEx .pie02 section article .slice2 span {
+  background-color: #000;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  display: block;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+body .contenedorEx .pie02 section article .legend2 {
+  list-style-type: none;
+}
+body .contenedorEx .pie02 section article .legend2 li {
+  color: #fff;
+  position: absolute;
+}
+body .contenedorEx .pie02 section article .legend2 .b01 {
+  color: #fff;
+  right: 50px;
+  top: 285px;
+  z-index: 9;
+}
+body .contenedorEx .pie02 section article .legend2 .b01 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b01 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b01 span:after {
+  content: "%";
+}
+body .contenedorEx .pie02 section article .legend2 .b02 {
+  color: #fff;
+  right: 40px;
+  top: 415px;
+  z-index: 9;
+}
+body .contenedorEx .pie02 section article .legend2 .b02 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b02 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b02 span:after {
+  content: "%";
+}
+body .contenedorEx .pie02 section article .legend2 .b03 {
+  color: #fff;
+  right: 160px;
+  top: 490px;
+  z-index: 9;
+}
+body .contenedorEx .pie02 section article .legend2 .b03 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b03 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b03 span:after {
+  content: "%";
+}
+body .contenedorEx .pie02 section article .legend2 .b04 {
+  color: #fff;
+  right: 300px;
+  top: 415px;
+  z-index: 9;
+}
+body .contenedorEx .pie02 section article .legend2 .b04 p {
+  margin: 0 0 0.25em 0;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b04 span {
+  padding: 0 2.5em;
+  text-align: center;
+  width: 110px;
+}
+body .contenedorEx .pie02 section article .legend2 .b04 span:after {
+  content: "%";
+}
+body .contenedorEx .pie02 section article .legend2 em {
+  font-style: normal;
+}
+body .contenedorFv {
+  background: url("../img/bg_future_vacations.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 748px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1024px;
+/*-----Los ModalBox-----*/
+}
+body .contenedorFv .objeto {
+  display: none;
+}
+body .contenedorFv .objeto2 {
+  display: none;
+}
+body .contenedorFv .bolsaA {
+  bottom: 0;
+  height: 418px;
+  left: 50%;
+  margin-left: -427px;
+  position: absolute;
+  width: 854px;
+  z-index: 0;
+}
+body .contenedorFv .bolsaF {
+  background: url("../img/future/bolsa.png") no-repeat;
+  bottom: 0;
+  height: 418px;
+  left: 50%;
+  margin-left: -427px;
+  position: absolute;
+  width: 854px;
+  z-index: 99;
+  -webkit-clip-path: polygon(18% 59%, 88% 57%, 100% 59%, 100% 100%, 0 100%, 0 55%);
+  clip-path: polygon(18% 59%, 88% 57%, 100% 59%, 100% 100%, 0 100%, 0 55%);
+}
+body .contenedorFv .coliseo {
+  background: url("../img/future/roma.png") no-repeat;
+  background-size: cover;
+  bottom: 260px;
+  cursor: pointer;
+  height: 182px;
+  left: 228px;
+  position: absolute;
+  width: 238px;
+  z-index: 1;
+  -webkit-clip-path: polygon(16% 0, 28% 3%, 39% 21%, 100% 21%, 100% 100%, 0 100%, 0 10%);
+  clip-path: polygon(16% 0, 28% 3%, 39% 21%, 100% 21%, 100% 100%, 0 100%, 0 10%);
+}
+body .contenedorFv .coliseo:hover {
+  bottom: 265px;
+  height: 202px;
+  left: 218px;
+  width: 258px;
+}
+body .contenedorFv .torrePisa {
+  background: url("../img/future/torre_pisa.png") no-repeat;
+  background-size: cover;
+  bottom: 140px;
+  cursor: pointer;
+  height: 294px;
+  left: 140px;
+  position: absolute;
+  width: 238px;
+  z-index: 3;
+  -webkit-clip-path: polygon(33% 0, 46% 20%, 95% 100%, 41% 100%, 0 30%, 0 0);
+  clip-path: polygon(33% 0, 46% 20%, 95% 100%, 41% 100%, 0 30%, 0 0);
+}
+body .contenedorFv .torrePisa:hover {
+  bottom: 150px;
+  height: 314px;
+  left: 130px;
+  width: 258px;
+}
+body .contenedorFv .giza {
+  background: url("../img/future/giza.png") no-repeat;
+  background-size: cover;
+  bottom: 135px;
+  cursor: pointer;
+  height: 154px;
+  left: 230px;
+  position: absolute;
+  width: 230px;
+  z-index: 4;
+  -webkit-clip-path: polygon(36% 0, 54% 46%, 64% 46%, 79% 75%, 100% 75%, 100% 100%, 0 100%, 0% 43%, 9% 0);
+  clip-path: polygon(36% 0, 54% 46%, 64% 46%, 79% 75%, 100% 75%, 100% 100%, 0 100%, 0% 43%, 9% 0);
+}
+body .contenedorFv .giza:hover {
+  bottom: 140px;
+  height: 174px;
+  left: 220px;
+  width: 250px;
+}
+body .contenedorFv .vegas {
+  background: url("../img/future/vegas.png") no-repeat;
+  background-size: cover;
+  bottom: 135px;
+  cursor: pointer;
+  height: 118px;
+  left: 315px;
+  position: absolute;
+  width: 136px;
+  z-index: 5;
+}
+body .contenedorFv .vegas:hover {
+  bottom: 140px;
+  height: 138px;
+  left: 305px;
+  width: 156px;
+}
+body .contenedorFv .universal {
+  background: url("../img/future/universal.png") no-repeat;
+  background-size: cover;
+  bottom: 135px;
+  cursor: pointer;
+  height: 115px;
+  left: 425px;
+  position: absolute;
+  width: 208px;
+  z-index: 4;
+  -webkit-clip-path: polygon(13% 0, 87% 0, 100% 60%, 100% 100%, 0 100%, 0 60%);
+  clip-path: polygon(13% 0, 87% 0, 100% 60%, 100% 100%, 0 100%, 0 60%);
+}
+body .contenedorFv .universal:hover {
+  bottom: 135px;
+  height: 135px;
+  left: 415px;
+  width: 228px;
+}
+body .contenedorFv .taj {
+  background: url("../img/future/taj_mahal.png") no-repeat;
+  background-size: cover;
+  bottom: 137px;
+  cursor: pointer;
+  height: 213px;
+  left: 343px;
+  position: absolute;
+  width: 194px;
+  z-index: 3;
+  -webkit-clip-path: polygon(26% 0, 73% 0, 73% 25%, 100% 26%, 100% 100%, 0 100%, 0 25%, 26% 25%);
+  clip-path: polygon(26% 0, 73% 0, 73% 25%, 100% 26%, 100% 100%, 0 100%, 0 25%, 26% 25%);
+}
+body .contenedorFv .taj:hover {
+  bottom: 157px;
+  height: 233px;
+  left: 333px;
+  width: 214px;
+}
+body .contenedorFv .kukulkan {
+  background: url("../img/future/kukulkan.png") no-repeat;
+  background-size: cover;
+  bottom: 175px;
+  cursor: pointer;
+  height: 135px;
+  left: 415px;
+  position: absolute;
+  width: 306px;
+  z-index: 3;
+  -webkit-clip-path: polygon(30% 0, 70% 0, 70% 30%, 100% 90%, 100% 100%, 0 100%, 0 80%, 30% 30%);
+  clip-path: polygon(30% 0, 70% 0, 70% 30%, 100% 90%, 100% 100%, 0 100%, 0 80%, 30% 30%);
+}
+body .contenedorFv .kukulkan:hover {
+  bottom: 185px;
+  height: 155px;
+  left: 405px;
+  width: 326px;
+}
+body .contenedorFv .japon {
+  background: url("../img/future/japon.png") no-repeat;
+  background-size: cover;
+  bottom: 130px;
+  cursor: pointer;
+  height: 124px;
+  left: 515px;
+  position: absolute;
+  width: 319px;
+  z-index: 3;
+  -webkit-clip-path: polygon(50% 20%, 50% 0, 55% 0, 55% 60%, 100% 60%, 100% 100%, 0 100%, 0 25%, 36% 25%, 36% 20%);
+  clip-path: polygon(50% 20%, 50% 0, 55% 0, 55% 60%, 100% 60%, 100% 100%, 0 100%, 0 25%, 36% 25%, 36% 20%);
+}
+body .contenedorFv .japon:hover {
+  bottom: 140px;
+  height: 144px;
+  left: 505px;
+  width: 339px;
+}
+body .contenedorFv .brasil {
+  background: url("../img/future/brasil.png") no-repeat;
+  background-size: cover;
+  bottom: 160px;
+  cursor: pointer;
+  height: 204px;
+  left: 727px;
+  position: absolute;
+  width: 235px;
+  z-index: 5;
+  -webkit-clip-path: polygon(51% 10%, 0 6%, 0 27%, 38% 32%, 20% 100%, 80% 100%, 100% 100%, 100% 30%, 100% 14%, 73% 12%, 76% 0, 54% 0);
+  clip-path: polygon(51% 10%, 0 6%, 0 27%, 38% 32%, 20% 100%, 80% 100%, 100% 100%, 100% 30%, 100% 14%, 73% 12%, 76% 0, 54% 0);
+}
+body .contenedorFv .brasil:hover {
+  bottom: 160px;
+  height: 224px;
+  left: 717px;
+  width: 255px;
+}
+body .contenedorFv .cabos {
+  background: url("../img/future/los_cabos.png") no-repeat;
+  background-size: cover;
+  bottom: 143px;
+  cursor: pointer;
+  height: 175px;
+  left: 625px;
+  position: absolute;
+  width: 191px;
+  z-index: 3;
+  -webkit-clip-path: polygon(33% 20%, 63% 0, 100% 0, 100% 100%, 0 100%, 0 75%, 30% 75%);
+  clip-path: polygon(33% 20%, 63% 0, 100% 0, 100% 100%, 0 100%, 0 75%, 30% 75%);
+}
+body .contenedorFv .cabos:hover {
+  bottom: 158px;
+  height: 195px;
+  left: 615px;
+  width: 211px;
+}
+body .contenedorFv .sydney {
+  background: url("../img/future/sydney.png") no-repeat;
+  background-size: cover;
+  bottom: 190px;
+  cursor: pointer;
+  height: 155px;
+  left: 570px;
+  position: absolute;
+  width: 176px;
+  z-index: 2;
+  -webkit-clip-path: polygon(60% 9%, 78% 10%, 79% 55%, 100% 55%, 100% 100%, 0 100%, 0 0, 53% 0);
+  clip-path: polygon(60% 9%, 78% 10%, 79% 55%, 100% 55%, 100% 100%, 0 100%, 0 0, 53% 0);
+}
+body .contenedorFv .sydney:hover {
+  bottom: 190px;
+  height: 175px;
+  left: 560px;
+  width: 196px;
+}
+body .contenedorFv .york {
+  background: url("../img/future/estatua_libertad.png") no-repeat;
+  background-size: cover;
+  bottom: 160px;
+  cursor: pointer;
+  height: 467px;
+  left: 467px;
+  position: absolute;
+  width: 183px;
+  z-index: 2;
+  -webkit-clip-path: polygon(30% 25%, 70% 25%, 70% 40%, 100% 40%, 100% 100%, 0 100%, 0 0, 30% 0);
+  clip-path: polygon(30% 25%, 70% 25%, 70% 40%, 100% 40%, 100% 100%, 0 100%, 0 0, 30% 0);
+}
+body .contenedorFv .york:hover {
+  bottom: 180px;
+  height: 487px;
+  left: 457px;
+  width: 203px;
+}
+body .contenedorFv .paris {
+  background: url("../img/future/torre_ifel.png") no-repeat;
+  background-size: cover;
+  bottom: 155px;
+  cursor: pointer;
+  height: 423px;
+  left: 669px;
+  position: absolute;
+  width: 195px;
+  z-index: 2;
+  -webkit-clip-path: polygon(66% 0, 100% 0, 100% 100%, 24% 100%);
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 24% 100%);
+}
+body .contenedorFv .paris:hover {
+  bottom: 175px;
+  height: 443px;
+  left: 659px;
+  width: 215px;
+}
+body .contenedorFv .dubai {
+  background: url("../img/future/dubai.png") no-repeat;
+  background-size: cover;
+  bottom: 250px;
+  cursor: pointer;
+  height: 183px;
+  left: 655px;
+  position: absolute;
+  width: 104px;
+  z-index: 1;
+}
+body .contenedorFv .dubai:hover {
+  bottom: 270px;
+  height: 203px;
+  left: 645px;
+  width: 124px;
+}
+body .contenedorFv .disney {
+  background: url("../img/future/disney_castillo.png") no-repeat;
+  background-size: cover;
+  bottom: 245px;
+  cursor: pointer;
+  height: 362px;
+  left: 585px;
+  position: absolute;
+  width: 214px;
+  z-index: 0;
+}
+body .contenedorFv .disney:hover {
+  bottom: 255px;
+  height: 382px;
+  left: 580px;
+  width: 234px;
+}
+body .contenedorFv .triunfo {
+  background: url("../img/future/arco_triunfo.png") no-repeat;
+  background-size: cover;
+  bottom: 335px;
+  cursor: pointer;
+  height: 238px;
+  left: 398px;
+  position: absolute;
+  width: 232px;
+  z-index: 0;
+}
+body .contenedorFv .triunfo:hover {
+  bottom: 355px;
+  height: 258px;
+  left: 388px;
+  width: 252px;
+}
+body .contenedorFv .bigben {
+  background: url("../img/future/bigben.png") no-repeat;
+  background-size: cover;
+  bottom: 130px;
+  cursor: pointer;
+  height: 459px;
+  left: 310px;
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  -webkit-clip-path: polygon(15% 0, 65% 0, 65% 40%, 100% 40%, 100% 100%, 0 100%, 0 60%, 15% 60%);
+  clip-path: polygon(15% 0, 65% 0, 65% 40%, 100% 40%, 100% 100%, 0 100%, 0 60%, 15% 60%);
+}
+body .contenedorFv .bigben:hover {
+  bottom: 150px;
+  height: 479px;
+  left: 300px;
+  width: 270px;
+}
+body .contenedorFv .fill {
+  background: url("../img/future/fill.png") no-repeat;
+  background-size: cover;
+  bottom: 235px;
+  height: 130px;
+  left: 350px;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  width: 234px;
+  z-index: 0;
+}
+body .contenedorFv .modalBox {
+  bottom: 0;
+  border-top: 3px solid #f28f30;
+  border-right: 3px solid #f28f30;
+  border-bottom: 0;
+  border-left: 3px solid #f28f30;
+  box-shadow: 0 -7px 10px 4px rgba(0,0,0,0.2);
+  height: 150px;
+  left: 50%;
+  margin-left: -205.5px;
+  overflow: hidden;
+  position: absolute;
+  width: 411px;
+  z-index: 99;
+}
+body .contenedorFv .modalBox .leimage {
+  float: left;
+  height: 150px;
+  width: 137px;
+}
+body .contenedorFv .modalBox .leMap {
+  height: 150px;
+  margin-left: 137px;
+  width: 274px;
+}
+body .contenedorFv .modalBox .cerrar {
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+  margin: 0.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+body .contenedorFv .bigbenMb {
+  display: none;
+}
+body .contenedorFv .bigbenMb .leimage {
+  background: url("../img/modalbox/img_big_ben.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .bigbenMb .leMap {
+  background: url("../img/modalbox/mp_big_ben.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .brasilMb {
+  display: none;
+}
+body .contenedorFv .brasilMb .leimage {
+  background: url("../img/modalbox/img_christ_redeemer.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .brasilMb .leMap {
+  background: url("../img/modalbox/mp_christ_redeemer.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .cabosMb {
+  display: none;
+}
+body .contenedorFv .cabosMb .leimage {
+  background: url("../img/modalbox/img_cabo_san_lucas.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .cabosMb .leMap {
+  background: url("../img/modalbox/mp_cabo_san_lucas.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .coliseoMb {
+  display: none;
+}
+body .contenedorFv .coliseoMb .leimage {
+  background: url("../img/modalbox/img_colosseum.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .coliseoMb .leMap {
+  background: url("../img/modalbox/mp_colosseum.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .disneyMb {
+  display: none;
+}
+body .contenedorFv .disneyMb .leimage {
+  background: url("../img/modalbox/img_cinderella_castle.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .disneyMb .leMap {
+  background: url("../img/modalbox/mp_cinderella_castle.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .dubaiMb {
+  display: none;
+}
+body .contenedorFv .dubaiMb .leimage {
+  background: url("../img/modalbox/img_dubai.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .dubaiMb .leMap {
+  background: url("../img/modalbox/mp_burj_al.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .gizaMb {
+  display: none;
+}
+body .contenedorFv .gizaMb .leimage {
+  background: url("../img/modalbox/img_giza.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .gizaMb .leMap {
+  background: url("../img/modalbox/mp_giza.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .japonMb {
+  display: none;
+}
+body .contenedorFv .japonMb .leimage {
+  background: url("../img/modalbox/img_himeji_castle.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .japonMb .leMap {
+  background: url("../img/modalbox/mp_himeji_castle.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .kukulkanMb {
+  display: none;
+}
+body .contenedorFv .kukulkanMb .leimage {
+  background: url("../img/modalbox/img_kukulkan.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .kukulkanMb .leMap {
+  background: url("../img/modalbox/mp_kukulkan.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .parisMb {
+  display: none;
+}
+body .contenedorFv .parisMb .leimage {
+  background: url("../img/modalbox/img_eiffel_tower.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .parisMb .leMap {
+  background: url("../img/modalbox/mp_eiffel_tower.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .sydneyMb {
+  display: none;
+}
+body .contenedorFv .sydneyMb .leimage {
+  background: url("../img/modalbox/img_sydney_opera.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .sydneyMb .leMap {
+  background: url("../img/modalbox/mp_sydney_opera.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .tajMb {
+  display: none;
+}
+body .contenedorFv .tajMb .leimage {
+  background: url("../img/modalbox/img_taj_mahal.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .tajMb .leMap {
+  background: url("../img/modalbox/mp_taj_mahal.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .torreMb {
+  display: none;
+}
+body .contenedorFv .torreMb .leimage {
+  background: url("../img/modalbox/img_leaning_tower.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .torreMb .leMap {
+  background: url("../img/modalbox/mp_leaning_tower.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .triunfoMb {
+  display: none;
+}
+body .contenedorFv .triunfoMb .leimage {
+  background: url("../img/modalbox/img_arco_triunfo.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .triunfoMb .leMap {
+  background: url("../img/modalbox/mp_arco_triunfo.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .universalMb {
+  display: none;
+}
+body .contenedorFv .universalMb .leimage {
+  background: url("../img/modalbox/img_universal_studios.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .universalMb .leMap {
+  background: url("../img/modalbox/mp_universal_studios.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .vegasMb {
+  display: none;
+}
+body .contenedorFv .vegasMb .leimage {
+  background: url("../img/modalbox/img_las_vegas.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .vegasMb .leMap {
+  background: url("../img/modalbox/mp_las_vegas.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorFv .yorkMb {
+  display: none;
+}
+body .contenedorFv .yorkMb .leimage {
+  background: url("../img/modalbox/img_statue_liberty.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .contenedorFv .yorkMb .leMap {
+  background: url("../img/modalbox/mp_statue_liberty.jpg") no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+body .contenedorPlatino {
+  background: url("../img/bg_platinum.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 175px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorPlatino .galeria {
+  display: none;
+  height: 390px;
+  margin: 45px 0 0 50px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 815px;
+}
+body .contenedorPlatino .galeria .cuadro {
+  background: #f00;
+  border: 2.5px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+}
+body .contenedorPlatino .galeria .chico {
+  height: 113px;
+  margin: 13.5px;
+  padding: 0;
+  width: 114px;
+}
+body .contenedorPlatino .galeria .grande {
+  background: url("../img/platinum/s1_big.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 253px;
+  margin: 0 0 0 141px;
+  padding: 0;
+  transition: background 1s ease-in-out;
+  width: 674px;
+}
+body .contenedorPlatino .galeria .s1 {
+  background: url("../img/platinum/s1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 0;
+  margin-top: 0;
+}
+body .contenedorPlatino .galeria .s2 {
+  background: url("../img/platinum/s2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 0;
+  margin-top: 140px;
+}
+body .contenedorPlatino .galeria .s3 {
+  background: url("../img/platinum/s3.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 0;
+  margin-top: 278px;
+}
+body .contenedorPlatino .galeria .s4 {
+  background: url("../img/platinum/s4.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 141px;
+  margin-top: 278px;
+}
+body .contenedorPlatino .galeria .s5 {
+  background: url("../img/platinum/s5.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 281px;
+  margin-top: 278px;
+}
+body .contenedorPlatino .galeria .s6 {
+  background: url("../img/platinum/s6.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 421px;
+  margin-top: 278px;
+}
+body .contenedorPlatino .galeria .s7 {
+  background: url("../img/platinum/s7.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 561px;
+  margin-top: 278px;
+}
+body .contenedorPlatino .galeria .s8 {
+  background: url("../img/platinum/s8.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 701px;
+  margin-top: 278px;
+}
+body .contenedorGrandS {
+  background: url("../img/bg_grandSolmar.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 125px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorGrandS .large_img {
+  height: 530px;
+  position: relative;
+  width: 100%;
+}
+body .contenedorGrandS .large_img img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+body .contenedorGrandS .large_img .l01,
+body .contenedorGrandS .large_img .l02,
+body .contenedorGrandS .large_img .l03,
+body .contenedorGrandS .large_img .l04,
+body .contenedorGrandS .large_img .l05,
+body .contenedorGrandS .large_img .l06,
+body .contenedorGrandS .large_img .l07,
+body .contenedorGrandS .large_img .l08 {
+  display: none;
+}
+body .contenedorGrandS .thumbs {
+  bottom: 0;
+  display: none;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+body .contenedorGrandS .thumbs img {
+  bottom: 0;
+  position: absolute;
+}
+body .contenedorGrandS .thumbs .t01 {
+  cursor: pointer;
+  left: 0.65em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t01:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t02 {
+  cursor: pointer;
+  left: 5em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t02:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t03 {
+  cursor: pointer;
+  left: 13em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t03:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t04 {
+  cursor: pointer;
+  left: 22.2em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t04:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t05 {
+  cursor: pointer;
+  left: 30.3em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t05:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t06 {
+  cursor: pointer;
+  left: 37.7em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t06:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t07 {
+  cursor: pointer;
+  left: 46.15em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t07:hover {
+  bottom: 1em;
+}
+body .contenedorGrandS .thumbs .t08 {
+  cursor: pointer;
+  left: 56em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorGrandS .thumbs .t08:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS {
+  background: url("../img/bg_ranchoS.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 125px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRanchoS .large_img {
+  height: 530px;
+  position: relative;
+  width: 100%;
+}
+body .contenedorRanchoS .large_img img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+body .contenedorRanchoS .large_img .l01,
+body .contenedorRanchoS .large_img .l02,
+body .contenedorRanchoS .large_img .l03,
+body .contenedorRanchoS .large_img .l04,
+body .contenedorRanchoS .large_img .l05,
+body .contenedorRanchoS .large_img .l06,
+body .contenedorRanchoS .large_img .l07,
+body .contenedorRanchoS .large_img .l08 {
+  display: none;
+}
+body .contenedorRanchoS .thumbs {
+  bottom: 0;
+  display: none;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+body .contenedorRanchoS .thumbs img {
+  bottom: 0;
+  position: absolute;
+}
+body .contenedorRanchoS .thumbs .t01 {
+  cursor: pointer;
+  left: 0.65em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t01:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t02 {
+  cursor: pointer;
+  left: 5em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t02:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t03 {
+  cursor: pointer;
+  left: 13em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t03:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t04 {
+  cursor: pointer;
+  left: 22.2em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t04:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t05 {
+  cursor: pointer;
+  left: 30.3em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t05:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t06 {
+  cursor: pointer;
+  left: 37.7em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t06:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t07 {
+  cursor: pointer;
+  left: 46.15em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t07:hover {
+  bottom: 1em;
+}
+body .contenedorRanchoS .thumbs .t08 {
+  cursor: pointer;
+  left: 56em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRanchoS .thumbs .t08:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG {
+  background: url("../img/bg_playaGrande.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 125px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorPlayaG .large_img {
+  height: 530px;
+  position: relative;
+  width: 100%;
+}
+body .contenedorPlayaG .large_img img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+body .contenedorPlayaG .large_img .l01,
+body .contenedorPlayaG .large_img .l02,
+body .contenedorPlayaG .large_img .l03,
+body .contenedorPlayaG .large_img .l04,
+body .contenedorPlayaG .large_img .l05,
+body .contenedorPlayaG .large_img .l06,
+body .contenedorPlayaG .large_img .l07,
+body .contenedorPlayaG .large_img .l08 {
+  display: none;
+}
+body .contenedorPlayaG .thumbs {
+  bottom: 0;
+  display: none;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+body .contenedorPlayaG .thumbs img {
+  bottom: 0;
+  position: absolute;
+}
+body .contenedorPlayaG .thumbs .t01 {
+  cursor: pointer;
+  left: 0.65em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t01:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t02 {
+  cursor: pointer;
+  left: 5em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t02:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t03 {
+  cursor: pointer;
+  left: 13em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t03:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t04 {
+  cursor: pointer;
+  left: 22.2em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t04:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t05 {
+  cursor: pointer;
+  left: 30.3em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t05:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t06 {
+  cursor: pointer;
+  left: 37.7em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t06:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t07 {
+  cursor: pointer;
+  left: 46.15em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t07:hover {
+  bottom: 1em;
+}
+body .contenedorPlayaG .thumbs .t08 {
+  cursor: pointer;
+  left: 56em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorPlayaG .thumbs .t08:hover {
+  bottom: 1em;
+}
+body .contenedorRidge {
+  background: url("../img/bg_ridge.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 125px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRidge .large_img {
+  height: 530px;
+  position: relative;
+  width: 100%;
+}
+body .contenedorRidge .large_img img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+body .contenedorRidge .large_img .l01,
+body .contenedorRidge .large_img .l02,
+body .contenedorRidge .large_img .l03,
+body .contenedorRidge .large_img .l04,
+body .contenedorRidge .large_img .l05,
+body .contenedorRidge .large_img .l06,
+body .contenedorRidge .large_img .l07,
+body .contenedorRidge .large_img .l08 {
+  display: none;
+}
+body .contenedorRidge .thumbs {
+  bottom: 0;
+  display: none;
+  height: 95px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+body .contenedorRidge .thumbs img {
+  bottom: 0;
+  position: absolute;
+}
+body .contenedorRidge .thumbs .t01 {
+  cursor: pointer;
+  left: 0.65em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t01:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t02 {
+  cursor: pointer;
+  left: 5em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t02:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t03 {
+  cursor: pointer;
+  left: 13em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t03:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t04 {
+  cursor: pointer;
+  left: 22.2em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t04:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t05 {
+  cursor: pointer;
+  left: 30.3em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t05:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t06 {
+  cursor: pointer;
+  left: 37.7em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t06:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t07 {
+  cursor: pointer;
+  left: 46.15em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t07:hover {
+  bottom: 1em;
+}
+body .contenedorRidge .thumbs .t08 {
+  cursor: pointer;
+  left: 56em;
+  transition: all 0.5s ease-in-out;
+}
+body .contenedorRidge .thumbs .t08:hover {
+  bottom: 1em;
+}
+body .contenedorRent {
+  background: url("../img/bg_rentvsown.jpg") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 185px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRent .objetos {
+  display: none;
+  height: 563px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorRent .objetos .memberS {
+  display: none;
+}
+body .contenedorIndex {
+  background: #fff;
+  height: 748px;
+  overflow: hidden;
+  padding-top: 125px;
+  position: relative;
+  width: 1024px;
+}
+body .contenedorIndex div {
+  cursor: pointer;
+}
+body .contenedorIndex .img01 {
+  background: url("../img/menu/01_interval.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  box-sizing: border-box;
+  height: 298.2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 258.5px;
+}
+body .contenedorIndex .img02 {
+  background: url("../img/menu/02_rci.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  box-sizing: border-box;
+  height: 298.2px;
+  left: 258.5px;
+  position: absolute;
+  top: 0;
+  width: 258.5px;
+}
+body .contenedorIndex .img03 {
+  background: url("../img/menu/03_rent.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  box-sizing: border-box;
+  height: 146.6px;
+  position: absolute;
+  top: 0;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .img04 {
+  background: url("../img/menu/04_platinum.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  box-sizing: border-box;
+  height: 146.6px;
+  position: absolute;
+  top: 0;
+  transition: opacity 1s ease;
+  width: 253.5px;
+}
+body .contenedorIndex .img05 {
+  background: url("../img/menu/05_awards.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  position: absolute;
+  top: 146.6px;
+  transition: opacity 1s ease;
+  width: 507px;
+}
+body .contenedorIndex .img06 {
+  background: url("../img/menu/06_grande.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  left: 0;
+  position: absolute;
+  top: 298.2px;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .img07 {
+  background: url("../img/menu/07_ridge.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  left: 258.5px;
+  position: absolute;
+  top: 298.2px;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .img08 {
+  background: url("../img/menu/08_solmar.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  position: absolute;
+  top: 298.2px;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .img09 {
+  background: url("../img/menu/09_rancho.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  position: absolute;
+  top: 298.2px;
+  transition: opacity 1s ease;
+  width: 253.5px;
+}
+body .contenedorIndex .img10 {
+  background: url("../img/menu/10_activities.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  left: 0;
+  position: absolute;
+  top: 449.8px;
+  transition: opacity 1s ease;
+  width: 517px;
+}
+body .contenedorIndex .img11 {
+  background: url("../img/menu/11_future.jpg") no-repeat;
+  background-position: center top;
+  background-size: cover;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 297.8px;
+  left: 517px;
+  position: absolute;
+  top: 449.8px;
+  transition: opacity 1s ease;
+  width: 517px;
+}
+body .contenedorIndex .img12 {
+  background: url("../img/menu/12_calculator.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  left: 0;
+  position: absolute;
+  top: 601.4px;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .img13 {
+  background: url("../img/menu/13_rcalculator.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  border-top: 5px solid #fff;
+  box-sizing: border-box;
+  height: 151.6px;
+  left: 258.5px;
+  position: absolute;
+  top: 601.4px;
+  transition: opacity 1s ease;
+  width: 258.5px;
+}
+body .contenedorIndex .cIzquierda01,
+body .contenedorIndex .cIzquierda02,
+body .contenedorIndex .cIzquierda03,
+body .contenedorIndex .cIzquierda04,
+body .contenedorIndex .cIzquierda05 {
+  left: -1000px;
+  z-index: 4;
+}
+body .contenedorIndex .cDerecha01,
+body .contenedorIndex .cDerecha02,
+body .contenedorIndex .cDerecha03,
+body .contenedorIndex .cDerecha04,
+body .contenedorIndex .cDerecha05 {
+  left: 1500px;
+  z-index: 2;
+}
+body .contenedorIndex .cArriba01,
+body .contenedorIndex .cArriba02 {
+  top: -1000px;
+  z-index: 1;
+}
+body .contenedorIndex .cAbajo {
+  top: 1200px;
+  z-index: 3;
+}
+@-moz-keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@-o-keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+@keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}

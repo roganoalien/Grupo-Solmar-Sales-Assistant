@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Reverse Calculator</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+		<style>
+			.mover{
+				margin-left: 1500px;
+				margin-top: 1000px;
+				opacity: 0;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contenedorRc animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<div class="preguntas animated">
+				<input type="text" placeholder="Enter your initials here" class="iniciales">
+				<div class="flexStuff">
+					<div class="izquierda">
+						<p class="singleP">How many years have you been an owner?</p>
+						<p class="singleP">What was your original purchase price?</p>
+						<p class="singlePdos">How much is your current maintenance fee?</p>
+						<p class="dobleP">In your experience, how much does your<br> maintenance fee increases each year?</p>
+						<p class="doblePdos">How many vacation days have you taken each<br> year with this ownership?</p>
+						<p class="doblePtres">If you where not an owner, how much<br> would you pay for nightly accommodations?</p>
+						<p class="doblePcuatro">What do you think the average annual<br> rate of inflation has been for accommodations?</p>
+						<p class="doblePcinco">How many more years of vacations<br> will your ownership provide?</p>
+					</div>
+					<div class="derecha">
+						<input type="number" class="iComun yearsOwner">
+						<input type="number" class="iComun purchasePrice">
+						<input type="number" class="iComun maintenanceFee">
+						<input type="number" class="iComun maintenanceIncrease">
+						<input type="number" class="iComun daysPerYear">
+						<input type="number" class="iComun nightlyAccommodations">
+						<input type="number" class="iComun anualInflation">
+						<input type="number" class="iComun yearsToGo">
+						<button class="botonRc">
+						<img src="img/boton_reverse_calculator.png" alt="Process">
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="respuestas animated">
+				<section class="cuadros">
+					<article class="ownership">
+						<h2>Ownership</h2>
+						<div class="infoCont">
+							<div class="ladoIzO">
+								<p>Original Purchase price</p>
+								<p>Current maintenance fee</p>
+								<p>Maintenance fee increase</p>
+								<p>Past and future vacations</p>
+							</div>
+							<div class="ladoDeO">
+								<p class="opp"></p>
+								<p class="cmf"></p>
+								<p class="mfi"></p>
+								<p class="pfv"></p>
+							</div>
+						</div>
+						<h1 class="cifraO"></h1>
+						<h3>Total Cost of Ownership for<br>Past and Future Vacations</h3>
+					</article>
+					<article class="non-ownership">
+						<h2>Non-Ownership</h2>
+						<div class="infoCont">
+							<div class="ladoIzN">
+								<p class="vdtey"></p>
+								<p class="nca"></p>
+								<p class="air"></p>
+								<p class="pfv"></p>
+							</div>
+							<div class="ladoDeN">
+								<p>Vacation days taken each year</p>
+								<p>Nightly cost for accommodations</p>
+								<p>Average inflation rate</p>
+								<p>Past and future vacations</p>
+							</div>
+						</div>
+						<h1 class="cifraN"></h1>
+						<h3>Total Cost of Non-Ownership for<br>Past and Future Vacations</h3>
+					</article>
+				</section>
+				<h1 class="ahorros"></h1>
+				<h3>Total amount saved by your Ownership</h3>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/reverse_calculator.js"></script>
+	</body>
+</html>

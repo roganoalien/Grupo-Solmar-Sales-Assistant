@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Calculator</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="contenedorC animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<div class="preguntasC animated">
+				<input type="text" placeholder="Enter your initials here" class="iniciales">
+				<div class="flexStuff">
+					<div class="izquierda">
+						<p>Days per year you vacation</p>
+						<p>Cost per night for hotel room</p>
+						<p class="ultimo">Years you plan to go on vacationing</p>
+						<p class="ultimo">Your estimate of average inflation per year</p>
+					</div>
+					<div class="derecha">
+						<input type="number" class="daysPerYear">
+						<input type="number" class="costPerNight">
+						<input type="number" class="yearsYouPlan">
+						<input type="number" class="yourEstimate">
+						<div class="elPrint">
+							<button class="printCalculator">
+							<img src="img/print.png" alt="Imprimir">
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="respuestaC animated">
+					<div class="izquierdaD">
+						<p>Subtotal</p>
+						<p id="inflaT">Inflation</p>
+						<p>Total</p>
+					</div>
+					<div class="derechaD">
+						<p class="subtotal"></p>
+						<p class="inflation"></p>
+						<p class="total"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/calculator.js"></script>
+	</body>
+</html>

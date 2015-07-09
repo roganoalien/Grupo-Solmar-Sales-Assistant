@@ -1,0 +1,2109 @@
+//Variables Color
+azul = #1267a5
+blancoBeige = #faf3ee //Para fondos
+blancoAzul = #f3f9fd //Para fondos con tonalidad azul
+cafeNaranja = #cf9461 //Para bordes
+cafe = #e8a973 //pa textos
+marron = #6f4042 //Para texto
+naranja = #CC7200
+naranja2 = #f28f30 //Para el modalbox
+rojo = #d71d24 //para textos
+/*
+-- Grid System
+*/
+.section
+	clear both
+	padding 0
+	margin 0
+.col
+	display block
+	float left
+	margin 0
+	padding 0
+	&:first-child
+		margin-left 0
+.group
+	zoom 1
+	&:before
+		content ""
+		display table
+	&:after
+		content ""
+		clear both
+		display table
+.span_1_of_1
+	height 
+	width 684px
+.span_1_of_2
+	height 149px
+	width 683px
+.span_6_of_9
+	height 158px
+	width 795px
+.span_3_of_9
+	height 158px
+	width 570px
+/*
+-- Font
+*/
+@font-face {
+    font-family: 'carmina';
+    src: url('fonts/carminam-webfont.eot');
+    src: url('fonts/carminam-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/carminam-webfont.woff2') format('woff2'),
+         url('fonts/carminam-webfont.woff') format('woff'),
+         url('fonts/carminam-webfont.ttf') format('truetype'),
+         url('fonts/carminam-webfont.svg#carmina_md_btmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+-- Estilo
+*/
+*
+	box-sizing border-box
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+/*
+	Botón para regresar al Menú principal
+*/
+.botonMenu
+	background transparent
+	cursor pointer
+	height 125px
+	position absolute
+	right 0
+	top 0
+	width 400px
+	z-index 99
+.exchangeBtn
+	background transparent
+	bottom 0
+	cursor pointer
+	height 100px
+	position absolute
+	right 0
+	width 120px
+	z-index 99
+body
+	background white
+	font-family 'carmina'
+	font-size 16px
+	width 100%
+	.wrapper
+		margin 0 auto
+		overflow hidden
+		width 100%
+		.intervalInternational
+			height auto
+			width auto
+			.logo
+				padding 1em 0 0 1em
+				position absolute
+		.futurePlatinum
+			height auto
+			margin-left -2px
+			position relative
+			width auto
+			.futureVacations
+				width auto
+				h2
+					color azul
+					font-size 1.9em
+					font-weight 300
+					position absolute
+					right .7em
+					text-align right
+					top .5em
+				img 
+					margin 0
+					padding 0
+			.platinumMembership
+				height 156px
+				width 682px
+				h2
+					color white
+					font-size 1.9em
+					font-weight 300
+					position absolute
+					left .95em
+					text-align left
+					top 5.5em
+				img 
+					margin-top -4px
+					padding 0
+	.segunda
+		.rent
+			margin -4px 0 0 0
+			padding 0
+			position relative
+			width auto
+			h2
+				bottom -.3em
+				color white
+				font-size 1.9em
+				font-weight 300
+				left .5em
+				position absolute
+		.awards
+			margin -4px 0 0 0
+			padding 0
+			position relative
+			width auto
+			h2
+				bottom -.3em
+				color white
+				font-size 1.9em
+				font-weight 300
+				left 1em
+				position absolute
+	.tercera
+		.variety
+			position relative
+			.uno
+				h2
+					color black
+					font-size 1.9em
+					font-weight 300
+					position absolute
+					right 1em
+					top .1em
+			.dos
+				margin-top -4px
+				position relative
+				h2
+					bottom .5em
+					color white
+					font-size 1.9em
+					font-weight 300
+					position absolute
+					right 1em
+					text-align right
+			.tres
+				margin-top -4px
+				position relative
+				h2
+					color azul
+					font-size 1.9em
+					font-weight 300
+					left .9em
+					position absolute
+		.activities
+			position relative
+			h2
+				bottom -.1em
+				color naranja
+				font-size 1.9em
+				font-weight 300
+				left 1em
+				position absolute
+	/*
+		Interval International Seccion
+	*/
+	.international
+		background url("../img/bg_interval.jpg") no-repeat
+		background-position center bottom
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		position relative
+		width 1024px
+		.interCont
+			height 447px
+			margin-top 325px
+			padding 0 0 0 1em
+			width 777px
+			.fila01
+				margin-left -70px
+				padding-top 100px
+				text-align center
+				img
+					margin 0 20px
+					vertical-align middle
+				.logos
+					opacity 0
+					transition opacity 1s ease-in
+			.fila02
+				margin-left -60px
+				padding 1.5em 0
+				text-align center
+				img
+					margin 0 20px
+					vertical-align middle
+				.logos
+					opacity 0
+					transition opacity 1s ease-in
+	/*
+		RCI
+	*/
+	.contenedorRci
+		background url("../img/bg_rci.jpg") no-repeat
+		background-position center bottom
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		position relative
+		width 1024px
+		.interRci
+			height 447px
+			margin-top 325px
+			padding 0 0 0 1em
+			width 100%
+			.fila01
+				display none
+				margin-left -50px
+				padding-top 70px
+				text-align center
+				img
+					margin 0 0.5em
+					vertical-align middle
+			.fila02
+				display none
+				margin-left -130px
+				padding-top .5em
+				text-align center
+				img
+					margin 0 0.5em
+					vertical-align middle
+				.corto00
+					margin 0 0 0 -.3em
+				.corto01
+					margin 0 0 0 -1em
+				.corto02
+					margin 0 0 0 -2em
+				.corto03
+					margin 0 0 0 -.5em
+			.fila03
+				display none
+				margin-left -150px
+				padding-top 1em
+				text-align center
+				img
+					margin 0 .5em
+					vertical-align middle
+	/*
+	----Reverse Calculator
+	*/
+	.contenedorRc
+		background url('../img/bg_reverse_calculator.jpg') no-repeat
+		background-size cover
+		background-position center
+		//display none
+		height 748px
+		margin 0
+		overflow hidden
+		padding 0
+		position relative
+		width 1024px
+		.preguntas
+			height 100vh
+			margin 0 auto
+			padding 170px 0 0 0
+			text-align center
+			width 861px
+			.iniciales
+				background blancoBeige
+				border 3px solid rgba(cafeNaranja, 0.58)
+				color marron
+				font-size 21px
+				outline none
+				padding 13.5px 0
+				text-align center
+				transition border 0.5s ease-in-out
+				width 427px
+				&:focus
+					border 3px solid rgba(cafeNaranja, 1)
+			::-webkit-input-placeholder
+				color marron
+			.flexStuff
+				margin-top 15px
+				.izquierda
+					float left
+					width 433px
+					.singleP
+						color marron
+						font-size 18px
+						text-align right
+						margin 32px 0 0 0
+						&:first-child
+							margin-top 12px
+					.singlePdos
+						color marron
+						font-size 18px
+						text-align right
+						margin 35px 0 0 0
+					.dobleP
+						color marron
+						font-size 18px
+						margin 22px 0 0 0
+						text-align right
+					.doblePdos
+						color marron
+						font-size 18px
+						margin 15px 0 0 0
+						text-align right
+					.doblePtres,
+					.doblePcuatro,
+					.doblePcinco
+						color marron
+						font-size 18px
+						margin 10px 0 0 0
+						text-align right
+				.derecha
+					float left
+					padding-left 15px
+					position relative
+					width 428px
+					input
+						background blancoBeige
+						border 3px solid rgba(cafeNaranja, 0.58)
+						border-radius none
+						color marron
+						display block
+						height 40px
+						margin-bottom 16px
+						outline none
+						text-align center
+						transition border 0.5s ease-in-out
+						width 195px
+						&:focus
+							border 3px solid rgba(cafeNaranja, 1)
+					.botonRc
+						background blancoBeige
+						border 3px solid rgba(cafeNaranja, 0.58)
+						bottom 15px
+						height 61px
+						position absolute
+						right 0
+						transition border 0.5s ease-in-out
+						width 167px
+						z-index 99
+						&:hover
+							border 3px solid rgba(cafeNaranja, 1)
+		.respuestas
+			display none
+			height 748px
+			left 50%
+			margin 0 auto 0 -430.5px
+			padding 170px 0 0 0
+			position absolute
+			top 0
+			width 861px
+			.cuadros
+				display -webkit-flex
+				.ownership
+					background white //blancoBeige
+					border 9px solid rgba(cafeNaranja, 0.58)
+					box-shadow 3px 3px 5px 3px rgba(black, 0.1), inset 3px 3px 5px 4px rgba(black, 0.15)
+					height 372px
+					margin-right 20px
+					width 420.5px
+					h2
+						color marron
+						font-size 42px
+						margin-top 27px
+						text-align center
+					.infoCont
+						display -webkit-flex
+						margin-top -7px
+						.ladoIzO
+							color cafeNaranja
+							margin-right .5em
+							width 70%
+							p
+								margin 6px 0
+								text-align right
+						.ladoDeO
+							color rojo
+							margin-left .5em
+							width 30%
+							p
+								margin 6px 0
+								text-align left
+					.cifraO
+						color marron
+						font-size 50px
+						margin-top 13px
+						text-align center
+					h3
+						color marron
+						font-size 20px
+						line-height 1.25em
+						margin -1.5em
+						text-align center
+				.non-ownership
+					background white //blancoBeige
+					border 9px solid rgba(cafeNaranja, 0.58)
+					box-shadow 3px 3px 5px 3px rgba(black, 0.1), inset 3px 3px 5px 4px rgba(black, 0.15)
+					height 372px
+					width 420.5px
+					h2
+						color marron
+						font-size 42px
+						margin-top 27px
+						text-align center
+					.infoCont
+						display -webkit-flex
+						margin-top -7px
+						.ladoIzN
+							color rojo
+							margin-right .5em
+							width 25%
+							p
+								margin 6px 0
+								text-align right
+						.ladoDeN
+							color cafeNaranja
+							margin-left .5em
+							width 75%
+							p
+								margin 6px 0
+								text-align left
+					.cifraN
+						color marron
+						font-size 50px
+						margin-top 13px
+						text-align center
+					h3
+						color marron
+						font-size 20px
+						line-height 1.25em
+						margin -1.5em
+						text-align center
+			.ahorros
+				color rgba(marron, 0.7)
+				font-size 80px
+				margin-top 60px
+				text-align center
+			h3
+				color cafe
+				font-size 20px
+				margin -45px 0 0 0
+				text-align center
+	/*
+	----Calculator
+	*/
+	.contenedorC
+		background url('../img/bg_calculator.jpg') no-repeat
+		background-size cover
+		background-position center
+		//display none
+		height 748px
+		margin 0
+		overflow hidden
+		padding 0
+		position relative
+		width 1024px
+		.preguntasC
+			height 748px
+			margin 0 auto
+			padding 170px 0 0 0
+			position relative
+			text-align center
+			width 861px
+			.iniciales
+				background blancoAzul
+				border 3px solid rgba(azul, 0.2)
+				color azul
+				font-size 21px
+				outline none
+				padding 13.5px 0
+				text-align center
+				transition border 0.5s ease-in-out
+				width 612px
+				&:focus
+					border 3px solid rgba(azul, 0.58)
+			::-webkit-input-placeholder
+				color azul
+			.flexStuff
+				margin-top 53px
+				.izquierda
+					float left
+					width 433px
+					p
+						color azul
+						font-size 18px
+						text-align right
+						margin 35px 0 0 0
+						&:first-child
+							margin-top 15px
+					.ultimo
+						margin-top 40px
+				.derecha
+					float left
+					padding-left 15px
+					position relative
+					width 428px
+					input
+						background blancoAzul
+						border 3px solid rgba(azul, 0.2)
+						border-radius none
+						color azul
+						display block
+						height 45px
+						margin-bottom 16px
+						outline none
+						text-align center
+						transition border 0.5s ease-in-out
+						width 290px
+						&:focus
+							border 3px solid rgba(azul, 0.58)
+					.elPrint
+						margin-top 110px
+						width 290px
+						.printCalculator
+							background blancoAzul
+							border 3px solid rgba(azul, 0.2)
+							height 70px
+							transition border 0.5s ease-in-out
+							width 167px
+							z-index 99
+							&:hover
+								border 3px solid rgba(azul, 0.58)
+							img
+								vertical-align middle
+			.respuestaC
+				display none
+				bottom 53px
+				position absolute
+				width 433px
+				.izquierdaD
+					float left
+					margin 0em 0 -1em 175px
+					padding 0
+					text-align right
+					p
+						color azul
+						font-size 1.5em
+						margin .5em 0 0 0
+						padding 0
+				.derechaD
+					text-align right
+					margin 0
+					padding 0
+					p
+						color rojo
+						font-size 1.5em
+						margin .5em 0 0 0
+						padding 0
+	/*
+	----Exchange Requests
+	*/
+	@keyframes bake-pie {
+		from {
+			transform rotate(0deg) translate3d(0,0,0)
+		}
+	}
+	.contenedorEx
+		background url('../img/bg_exchange_request.jpg') no-repeat
+		background-size cover
+		background-position center
+		display flex
+		display -webkit-flex
+		display none
+		height 748px
+		margin 0
+		overflow hidden
+		padding 0
+		padding-top 165px
+		position relative
+		width 1024px
+		.subtitulo
+			bottom 125px
+			color white
+			font-size 1.2em
+			margin-left 110px
+			position absolute
+			text-align center
+			width 100%
+		.pie01
+			display none
+			margin-left 23em
+			section
+				width 400px
+				margin 30px auto
+				h1
+					color white
+					font-size 1.2em
+					margin-left -1em
+					margin-bottom 0
+					margin-top 0
+				article
+					margin-top 60px
+					.pieID
+						display block
+						vertical-align top
+					.pie
+						height 200px
+						margin 1 30px 30px 0
+						position relative
+						width 200px
+						box-shadow 3px 3px 10px 3px rgba(black, 0.4)
+						border-radius 50%
+						&:before
+							content ""
+							display block
+							position absolute
+							box-shadow inset 3px 3px 10px 3px rgba(black, 0.4)
+							z-index 1
+							width 100px
+							height 100px
+							background url('../img/exchange_nube.png')//#4ba0d8
+							background-color #4ba0d8
+							background-size cover
+							border-radius 50%
+							top 50px
+							left 50px
+						&:after
+							content ""
+							display block
+							width 120px
+							height 2px
+					.slice
+						animation bake-pie 1s
+						clip rect(0px,200px,200px,100px)
+						height 200px
+						position absolute
+						width 200px
+						span
+							background-color black
+							border-radius 50%
+							clip rect(0px,200px,200px,100px)
+							display block
+							height 200px
+							left 0
+							position absolute
+							top 0
+							width 200px
+					.legend
+						list-style-type none
+						li
+							color white
+							position absolute
+						.b01
+							color white
+							right 350px
+							top 300px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						.b02
+							color white
+							right 570px
+							top 480px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						.b03
+							color white
+							right 650px
+							top 280px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						em
+							font-style normal
+		.pie02
+			display none
+			margin-left 0
+			section
+				width 400px
+				margin 30px auto
+				h1
+					color white
+					font-size 1.2em
+					margin-left -1.1em
+					margin-bottom 0
+					margin-top 0
+				article
+					margin-top 60px
+					.pieID2
+						display block
+						vertical-align top
+					.pie2
+						height 200px
+						margin 1 30px 30px 0
+						position relative
+						width 200px
+						box-shadow 3px 3px 10px 0 rgba(black, 0.4)
+						border-radius 50%
+						&:before
+							content ""
+							display block
+							box-shadow inset 3px 3px 10px 0 rgba(black, 0.4)
+							position absolute
+							z-index 1
+							width 100px
+							height 100px
+							background url('../img/exchange_nube.png')//#4ba0d8
+							background-color #4ba0d8
+							background-size cover
+							border-radius 50%
+							top 50px
+							left 50px
+						&:after
+							content ""
+							display block
+							width 120px
+							height 2px
+					.slice2
+						animation bake-pie 1s
+						clip rect(0px,200px,200px,100px)
+						height 200px
+						position absolute
+						width 200px
+						span
+							background-color black
+							border-radius 50%
+							clip rect(0px,200px,200px,100px)
+							display block
+							height 200px
+							left 0
+							position absolute
+							top 0
+							width 200px
+					.legend2
+						list-style-type none
+						li
+							color white
+							position absolute
+						.b01
+							color white
+							right 50px
+							top 285px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						.b02
+							color white
+							right 40px
+							top 415px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						.b03
+							color white
+							right 160px
+							top 490px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						.b04
+							color white
+							right 300px
+							top 415px
+							z-index 9
+							p
+								margin 0 0 .25em 0
+								text-align center
+								width 110px
+							span
+								padding 0 2.5em
+								text-align center
+								width 110px
+								&:after
+									content "%"
+						em
+							font-style normal
+	/*
+	----Future Vacations
+	*/
+	.contenedorFv
+		background url('../img/bg_future_vacations.jpg') no-repeat
+		background-size cover
+		background-position center
+		//display none
+		height 748px
+		margin 0
+		overflow hidden
+		padding 0
+		position relative
+		width 1024px
+		.objeto
+			display none
+		.objeto2
+			display none
+		.bolsaA
+			bottom 0
+			height 418px
+			left 50%
+			margin-left -427px
+			position absolute
+			width 854px
+			z-index 0
+		.bolsaF
+			background url('../img/future/bolsa.png') no-repeat
+			bottom 0
+			height 418px
+			left 50%
+			margin-left -427px
+			position absolute
+			width 854px
+			z-index 99
+			//clip-path
+			-webkit-clip-path: polygon(18% 59%, 88% 57%, 100% 59%, 100% 100%, 0 100%, 0 55%);
+			clip-path: polygon(18% 59%, 88% 57%, 100% 59%, 100% 100%, 0 100%, 0 55%);
+		.coliseo
+			background url('../img/future/roma.png') no-repeat
+			background-size cover
+			bottom 260px
+			cursor pointer
+			height 182px
+			left 228px
+			position absolute
+			width 238px
+			z-index 1
+			//clip-path
+			-webkit-clip-path: polygon(16% 0, 28% 3%, 39% 21%, 100% 21%, 100% 100%, 0 100%, 0 10%);
+			clip-path: polygon(16% 0, 28% 3%, 39% 21%, 100% 21%, 100% 100%, 0 100%, 0 10%);
+			&:hover
+				bottom 265px
+				height 202px
+				left 218px
+				width 258px
+		.torrePisa
+			background url('../img/future/torre_pisa.png') no-repeat
+			background-size cover
+			bottom 140px
+			cursor pointer
+			height 294px
+			left 140px
+			position absolute
+			width 238px
+			z-index 3
+			//clip-path
+			-webkit-clip-path: polygon(33% 0, 46% 20%, 95% 100%, 41% 100%, 0 30%, 0 0);
+			clip-path: polygon(33% 0, 46% 20%, 95% 100%, 41% 100%, 0 30%, 0 0);
+			&:hover
+				bottom 150px
+				height 314px
+				left 130px
+				width 258px
+		.giza
+			background url('../img/future/giza.png') no-repeat
+			background-size cover
+			bottom 135px
+			cursor pointer
+			height 154px
+			left 230px
+			position absolute
+			width 230px
+			z-index 4
+			//clip-path
+			-webkit-clip-path: polygon(36% 0, 54% 46%, 64% 46%, 79% 75%, 100% 75%, 100% 100%, 0 100%, 0% 43%, 9% 0);
+			clip-path: polygon(36% 0, 54% 46%, 64% 46%, 79% 75%, 100% 75%, 100% 100%, 0 100%, 0% 43%, 9% 0);
+			&:hover
+				bottom 140px
+				height 174px
+				left 220px
+				width 250px
+		.vegas
+			background url('../img/future/vegas.png') no-repeat
+			background-size cover
+			bottom 135px
+			cursor pointer
+			height 118px
+			left 315px
+			position absolute
+			width 136px
+			z-index 5
+			&:hover
+				bottom 140px
+				height 138px
+				left 305px
+				width 156px
+		.universal
+			background url('../img/future/universal.png') no-repeat
+			background-size cover
+			bottom 135px
+			cursor pointer
+			height 115px
+			left 425px
+			position absolute
+			width 208px
+			z-index 4
+			//clip-path
+			-webkit-clip-path: polygon(13% 0, 87% 0, 100% 60%, 100% 100%, 0 100%, 0 60%);
+			clip-path: polygon(13% 0, 87% 0, 100% 60%, 100% 100%, 0 100%, 0 60%);
+			&:hover
+				bottom 135px
+				height 135px
+				left 415px
+				width 228px
+		.taj
+			background url('../img/future/taj_mahal.png') no-repeat
+			background-size cover
+			bottom 137px
+			cursor pointer
+			height 213px
+			left 343px
+			position absolute
+			width 194px
+			z-index 3
+			//clip-path
+			-webkit-clip-path: polygon(26% 0, 73% 0, 73% 25%, 100% 26%, 100% 100%, 0 100%, 0 25%, 26% 25%);
+			clip-path: polygon(26% 0, 73% 0, 73% 25%, 100% 26%, 100% 100%, 0 100%, 0 25%, 26% 25%);
+			&:hover
+				bottom 157px
+				height 233px
+				left 333px
+				width 214px
+		.kukulkan
+			background url('../img/future/kukulkan.png') no-repeat
+			background-size cover
+			bottom 175px
+			cursor pointer
+			height 135px
+			left 415px
+			position absolute
+			width 306px
+			z-index 3
+			//clip-path
+			-webkit-clip-path: polygon(30% 0, 70% 0, 70% 30%, 100% 90%, 100% 100%, 0 100%, 0 80%, 30% 30%);
+			clip-path: polygon(30% 0, 70% 0, 70% 30%, 100% 90%, 100% 100%, 0 100%, 0 80%, 30% 30%);
+			&:hover
+				bottom 185px
+				height 155px
+				left 405px
+				width 326px
+		.japon
+			background url('../img/future/japon.png') no-repeat
+			background-size cover
+			bottom 130px
+			cursor pointer
+			height 124px
+			left 515px
+			position absolute
+			width 319px
+			z-index 3
+			//clip-path
+			-webkit-clip-path: polygon(50% 20%, 50% 0, 55% 0, 55% 60%, 100% 60%, 100% 100%, 0 100%, 0 25%, 36% 25%, 36% 20%);
+			clip-path: polygon(50% 20%, 50% 0, 55% 0, 55% 60%, 100% 60%, 100% 100%, 0 100%, 0 25%, 36% 25%, 36% 20%);
+			&:hover
+				bottom 140px
+				height 144px
+				left 505px
+				width 339px
+		.brasil
+			background url('../img/future/brasil.png') no-repeat
+			background-size cover
+			bottom 160px
+			cursor pointer
+			height 204px
+			left 727px
+			position absolute
+			width 235px
+			z-index 5
+			//clip-path
+			-webkit-clip-path: polygon(51% 10%, 0 6%, 0 27%, 38% 32%, 20% 100%, 80% 100%, 100% 100%, 100% 30%, 100% 14%, 73% 12%, 76% 0, 54% 0);
+			clip-path: polygon(51% 10%, 0 6%, 0 27%, 38% 32%, 20% 100%, 80% 100%, 100% 100%, 100% 30%, 100% 14%, 73% 12%, 76% 0, 54% 0);
+			&:hover
+				bottom 160px
+				height 224px
+				left 717px
+				width 255px
+		.cabos
+			background url('../img/future/los_cabos.png') no-repeat
+			background-size cover
+			bottom 143px
+			cursor pointer
+			height 175px
+			left 625px
+			position absolute
+			width 191px
+			z-index 3
+			//clip-path
+			-webkit-clip-path: polygon(33% 20%, 63% 0, 100% 0, 100% 100%, 0 100%, 0 75%, 30% 75%);
+			clip-path: polygon(33% 20%, 63% 0, 100% 0, 100% 100%, 0 100%, 0 75%, 30% 75%);
+			&:hover
+				bottom 158px
+				height 195px
+				left 615px
+				width 211px
+		.sydney
+			background url('../img/future/sydney.png') no-repeat
+			background-size cover
+			bottom 190px
+			cursor pointer
+			height 155px
+			left 570px
+			position absolute
+			width 176px
+			z-index 2
+			//clip-path
+			-webkit-clip-path: polygon(60% 9%, 78% 10%, 79% 55%, 100% 55%, 100% 100%, 0 100%, 0 0, 53% 0);
+			clip-path: polygon(60% 9%, 78% 10%, 79% 55%, 100% 55%, 100% 100%, 0 100%, 0 0, 53% 0);
+			&:hover
+				bottom 190px
+				height 175px
+				left 560px
+				width 196px
+		.york
+			background url('../img/future/estatua_libertad.png') no-repeat
+			background-size cover
+			bottom 160px
+			cursor pointer
+			height 467px
+			left 467px
+			position absolute
+			width 183px
+			z-index 2
+			//clip-path
+			-webkit-clip-path: polygon(30% 25%, 70% 25%, 70% 40%, 100% 40%, 100% 100%, 0 100%, 0 0, 30% 0);
+			clip-path: polygon(30% 25%, 70% 25%, 70% 40%, 100% 40%, 100% 100%, 0 100%, 0 0, 30% 0);
+			&:hover
+				bottom 180px
+				height 487px
+				left 457px
+				width 203px
+		.paris
+			background url('../img/future/torre_ifel.png') no-repeat
+			background-size cover
+			bottom 155px
+			cursor pointer
+			height 423px
+			left 669px
+			position absolute
+			width 195px
+			z-index 2
+			//clip-path
+			-webkit-clip-path: polygon(66% 0, 100% 0, 100% 100%, 24% 100%);
+			clip-path: polygon(66% 0, 100% 0, 100% 100%, 24% 100%);
+			&:hover
+				bottom 175px
+				height 443px
+				left 659px
+				width 215px
+		.dubai
+			background url('../img/future/dubai.png') no-repeat
+			background-size cover
+			bottom 250px
+			cursor pointer
+			height 183px
+			left 655px
+			position absolute
+			width 104px
+			z-index 1
+			&:hover
+				bottom 270px
+				height 203px
+				left 645px
+				width 124px
+		.disney
+			background url('../img/future/disney_castillo.png') no-repeat
+			background-size cover
+			bottom 245px
+			cursor pointer
+			height 362px
+			left 585px
+			position absolute
+			width 214px
+			z-index 0
+			&:hover
+				bottom 255px
+				height 382px
+				left 580px
+				width 234px
+		.triunfo
+			background url('../img/future/arco_triunfo.png') no-repeat
+			background-size cover
+			bottom 335px
+			cursor pointer
+			height 238px
+			left 398px
+			position absolute
+			width 232px
+			z-index 0
+			&:hover
+				bottom 355px
+				height 258px
+				left 388px
+				width 252px
+		.bigben
+			background url('../img/future/bigben.png') no-repeat
+			background-size cover
+			bottom 130px
+			cursor pointer
+			height 459px
+			left 310px
+			position absolute
+			width 250px
+			z-index 1
+			//clip-path
+			-webkit-clip-path: polygon(15% 0, 65% 0, 65% 40%, 100% 40%, 100% 100%, 0 100%, 0 60%, 15% 60%);
+			clip-path: polygon(15% 0, 65% 0, 65% 40%, 100% 40%, 100% 100%, 0 100%, 0 60%, 15% 60%);
+			&:hover
+				bottom 150px
+				height 479px
+				left 300px
+				width 270px
+		.fill
+			background url('../img/future/fill.png') no-repeat
+			background-size cover
+			bottom 235px
+			height 130px
+			left 350px
+			position absolute
+			transition all 0.5s ease-in-out
+			width 234px
+			z-index 0
+		/*-----Los ModalBox-----*/
+		.modalBox
+			bottom 0
+			border-top 3px solid naranja2
+			border-right 3px solid naranja2
+			border-bottom 0
+			border-left 3px solid naranja2
+			box-shadow 0 -7px 10px 4px rgba(black, 0.2)
+			height 150px
+			left 50%
+			margin-left -205.5px
+			overflow hidden
+			position absolute
+			width 411px
+			z-index 99
+			.leimage
+				float left
+				height 150px
+				width 137px
+			.leMap
+				height 150px
+				margin-left 137px
+				width 274px
+			.cerrar
+				border-radius 50%
+				box-shadow 2px 2px 6px 0px rgba(black, 0.2)
+				cursor pointer
+				margin .5em
+				position absolute
+				right 0
+				top 0
+				z-index 1
+		.bigbenMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_big_ben.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_big_ben.jpg') no-repeat
+				background-position right
+				background-size cover
+		.brasilMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_christ_redeemer.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_christ_redeemer.jpg') no-repeat
+				background-position right
+				background-size cover
+		.cabosMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_cabo_san_lucas.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_cabo_san_lucas.jpg') no-repeat
+				background-position right
+				background-size cover
+		.coliseoMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_colosseum.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_colosseum.jpg') no-repeat
+				background-position right
+				background-size cover
+		.disneyMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_cinderella_castle.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_cinderella_castle.jpg') no-repeat
+				background-position right
+				background-size cover
+		.dubaiMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_dubai.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_burj_al.jpg') no-repeat
+				background-position right
+				background-size cover
+		.gizaMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_giza.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_giza.jpg') no-repeat
+				background-position right
+				background-size cover
+		.japonMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_himeji_castle.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_himeji_castle.jpg') no-repeat
+				background-position right
+				background-size cover
+		.kukulkanMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_kukulkan.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_kukulkan.jpg') no-repeat
+				background-position right
+				background-size cover
+		.parisMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_eiffel_tower.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_eiffel_tower.jpg') no-repeat
+				background-position right
+				background-size cover
+		.sydneyMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_sydney_opera.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_sydney_opera.jpg') no-repeat
+				background-position right
+				background-size cover
+		.tajMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_taj_mahal.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_taj_mahal.jpg') no-repeat
+				background-position right
+				background-size cover
+		.torreMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_leaning_tower.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_leaning_tower.jpg') no-repeat
+				background-position right
+				background-size cover
+		.triunfoMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_arco_triunfo.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_arco_triunfo.jpg') no-repeat
+				background-position right
+				background-size cover
+		.universalMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_universal_studios.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_universal_studios.jpg') no-repeat
+				background-position right
+				background-size cover
+		.vegasMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_las_vegas.jpg') no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_las_vegas.jpg') no-repeat
+				background-position right
+				background-size cover
+		.yorkMb
+			display none
+			.leimage
+				background url('../img/modalbox/img_statue_liberty.jpg')	 no-repeat
+				background-position center
+				background-size cover
+			.leMap
+				background url('../img/modalbox/mp_statue_liberty.jpg') no-repeat
+				background-position right
+				background-size cover
+	/*
+		Awards & Accolades
+		en otro css awards.css
+	*/
+	/*
+		Platinum Membership
+	*/
+	.contenedorPlatino
+		background url('../img/bg_platinum.jpg') no-repeat
+		background-position center
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		padding-top 175px
+		position relative
+		width 1024px
+		.galeria
+			//background rgba(black, 0.4)
+			display none
+			height 390px
+			margin 45px 0 0 50px
+			padding 0
+			position relative
+			text-align center
+			width 815px
+			.cuadro
+				background red
+				border 2.5px solid white
+				border-radius 3px
+				cursor pointer
+				position absolute
+			.chico
+				height 113px
+				margin 13.5px
+				padding 0
+				width 114px
+			.grande
+				background url('../img/platinum/s1_big.jpg') no-repeat
+				background-position center
+				background-size cover
+				height 253px
+				margin 0 0 0 141px
+				padding 0
+				transition background 1s ease-in-out
+				width 674px
+			.s1
+				background url('../img/platinum/s1.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 0
+				margin-top 0
+			.s2
+				background url('../img/platinum/s2.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 0 
+				margin-top 140px 
+			.s3
+				background url('../img/platinum/s3.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 0 
+				margin-top 278px 
+			.s4
+				background url('../img/platinum/s4.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 141px 
+				margin-top 278px 
+			.s5
+				background url('../img/platinum/s5.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 281px
+				margin-top 278px
+			.s6
+				background url('../img/platinum/s6.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 421px
+				margin-top 278px
+			.s7
+				background url('../img/platinum/s7.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 561px
+				margin-top 278px
+			.s8
+				background url('../img/platinum/s8.jpg') no-repeat
+				background-position center
+				background-size cover
+				margin-left 701px
+				margin-top 278px
+	/*
+		Grand Solmar
+	*/
+	.contenedorGrandS
+		background url('../img/bg_grandSolmar.jpg') no-repeat
+		background-position center bottom
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		padding-top 125px
+		position relative
+		width 1024px
+		.large_img
+			//background rgba(black,0.5)
+			height 530px
+			position relative
+			width 100%
+			img
+				left 0
+				position absolute
+				top 0
+			.l01
+			.l02
+			.l03
+			.l04
+			.l05
+			.l06
+			.l07
+			.l08
+				display none
+		.thumbs
+			bottom 0
+			display none
+			height 95px
+			left 0
+			position absolute
+			width 100%
+			img
+				bottom 0
+				position absolute
+			.t01
+				cursor pointer
+				left .65em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t02
+				cursor pointer
+				left 5em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t03
+				cursor pointer
+				left 13em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t04
+				cursor pointer
+				left 22.2em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t05
+				cursor pointer
+				left 30.3em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t06
+				cursor pointer
+				left 37.7em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t07
+				cursor pointer
+				left 46.15em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t08
+				cursor pointer
+				left 56em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+	/*
+		Rancho San Lucas
+	*/
+	.contenedorRanchoS
+		background url('../img/bg_ranchoS.jpg') no-repeat
+		background-position center bottom
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		padding-top 125px
+		position relative
+		width 1024px
+		.large_img
+			//background rgba(black,0.5)
+			height 530px
+			position relative
+			width 100%
+			img
+				left 0
+				position absolute
+				top 0
+			.l01
+			.l02
+			.l03
+			.l04
+			.l05
+			.l06
+			.l07
+			.l08
+				display none
+		.thumbs
+			bottom 0
+			display none
+			height 95px
+			left 0
+			position absolute
+			width 100%
+			img
+				bottom 0
+				position absolute
+			.t01
+				cursor pointer
+				left .65em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t02
+				cursor pointer
+				left 5em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t03
+				cursor pointer
+				left 13em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t04
+				cursor pointer
+				left 22.2em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t05
+				cursor pointer
+				left 30.3em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t06
+				cursor pointer
+				left 37.7em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t07
+				cursor pointer
+				left 46.15em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t08
+				cursor pointer
+				left 56em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+	/*
+		Playa Grande
+	*/
+	.contenedorPlayaG
+		background url('../img/bg_playaGrande.jpg') no-repeat
+		background-position center bottom
+		background-size cover
+		//display none
+		height 748px
+		overflow hidden
+		padding-top 125px
+		position relative
+		width 1024px
+		.large_img
+			//background rgba(black,0.5)
+			height 530px
+			position relative
+			width 100%
+			img
+				left 0
+				position absolute
+				top 0
+			.l01
+			.l02
+			.l03
+			.l04
+			.l05
+			.l06
+			.l07
+			.l08
+				display none
+		.thumbs
+			bottom 0
+			display none
+			height 95px
+			left 0
+			position absolute
+			width 100%
+			img
+				bottom 0
+				position absolute
+			.t01
+				cursor pointer
+				left .65em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t02
+				cursor pointer
+				left 5em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t03
+				cursor pointer
+				left 13em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t04
+				cursor pointer
+				left 22.2em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t05
+				cursor pointer
+				left 30.3em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t06
+				cursor pointer
+				left 37.7em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t07
+				cursor pointer
+				left 46.15em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t08
+				cursor pointer
+				left 56em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+	/*
+		The Ridge
+	*/
+	.contenedorRidge
+		background url('../img/bg_ridge.jpg') no-repeat
+		background-position center bottom
+		background-size cover
+		// display none
+		height 748px
+		overflow hidden
+		padding-top 125px
+		position relative
+		width 1024px
+		.large_img
+			//background rgba(black,0.5)
+			height 530px
+			position relative
+			width 100%
+			img
+				left 0
+				position absolute
+				top 0
+			.l01
+			.l02
+			.l03
+			.l04
+			.l05
+			.l06
+			.l07
+			.l08
+				display none
+		.thumbs
+			bottom 0
+			display none
+			height 95px
+			left 0
+			position absolute
+			width 100%
+			img
+				bottom 0
+				position absolute
+			.t01
+				cursor pointer
+				left .65em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t02
+				cursor pointer
+				left 5em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t03
+				cursor pointer
+				left 13em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t04
+				cursor pointer
+				left 22.2em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t05
+				cursor pointer
+				left 30.3em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t06
+				cursor pointer
+				left 37.7em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t07
+				cursor pointer
+				left 46.15em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+			.t08
+				cursor pointer
+				left 56em
+				transition all .5s ease-in-out
+				&:hover
+					bottom 1em
+	/*
+		Rent vs Own
+	*/
+	.contenedorRent
+		background url('../img/bg_rentvsown.jpg') no-repeat
+		background-position center bottom
+		background-size cover
+		height 748px
+		overflow hidden
+		padding-top 185px
+		position relative
+		width 1024px
+		.objetos
+			display none
+			height 563px
+			position relative
+			width 1024px
+			.memberS
+				display none
+	/*
+		Menú principal
+	*/
+	.contenedorIndex
+		background white
+		height 748px
+		overflow hidden
+		padding-top 125px
+		position relative
+		//transition background 1s ease-in
+		width 1024px
+		div
+			cursor pointer
+		.img01
+			background url('../img/menu/01_interval.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-right 5px solid white
+			box-sizing border-box
+			height 298.2px
+			left 0
+			position absolute
+			top 0
+			//transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img02
+			background url('../img/menu/02_rci.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-right 5px solid white
+			box-sizing border-box
+			height 298.2px
+			left 258.5px
+			position absolute
+			top 0
+			// transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img03
+			background url('../img/menu/03_rent.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-right 5px solid white
+			box-sizing border-box
+			height 146.6px
+			//left 517px
+			position absolute
+			top 0
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img04
+			background url('../img/menu/04_platinum.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			box-sizing border-box
+			height 146.6px
+			//left 775.5px
+			position absolute
+			top 0
+			transition opacity 1s ease
+			width 253.5px
+			// &:hover
+			// 	opacity .7
+		.img05
+			background url('../img/menu/05_awards.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			//left 517px
+			position absolute
+			top 146.6px
+			transition opacity 1s ease
+			width 507px
+			// &:hover
+			// 	opacity .7
+		.img06
+			background url('../img/menu/06_grande.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			left 0
+			position absolute
+			top 298.2px
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img07
+			background url('../img/menu/07_ridge.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			left 258.5px
+			position absolute
+			top 298.2px
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img08
+			background url('../img/menu/08_solmar.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			//left 517px
+			position absolute
+			top 298.2px
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img09
+			background url('../img/menu/09_rancho.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-left 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			//left 775.5px
+			position absolute
+			top 298.2px
+			transition opacity 1s ease
+			width 253.5px
+			// &:hover
+			// 	opacity .7
+		.img10
+			background url('../img/menu/10_activities.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-bottom 5px solid white
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			left 0
+			position absolute
+			top 449.8px
+			transition opacity 1s ease
+			width 517px
+			// &:hover 
+			// 	opacity .7
+		.img11
+			background url('../img/menu/11_future.jpg') no-repeat
+			background-position center top
+			background-size cover
+			border-left 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 297.8px
+			left 517px
+			position absolute
+			top 449.8px
+			transition opacity 1s ease
+			width 517px
+			// &:hover
+			// 	opacity .7
+		.img12
+			background url('../img/menu/12_calculator.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			left 0
+			position absolute
+			top 601.4px
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.img13
+			background url('../img/menu/13_rcalculator.jpg') no-repeat
+			background-position center
+			background-size cover
+			border-left 5px solid white
+			border-right 5px solid white
+			border-top 5px solid white
+			box-sizing border-box
+			height 151.6px
+			left 258.5px
+			position absolute
+			top 601.4px
+			transition opacity 1s ease
+			width 258.5px
+			// &:hover
+			// 	opacity .7
+		.cIzquierda01
+		.cIzquierda02
+		.cIzquierda03
+		.cIzquierda04
+		.cIzquierda05
+			left -1000px
+			z-index 4
+		.cDerecha01
+		.cDerecha02
+		.cDerecha03
+		.cDerecha04
+		.cDerecha05
+			left 1500px
+			z-index 2
+		.cArriba01
+		.cArriba02
+			top -1000px
+			z-index 1
+		.cAbajo
+			top 1200px
+			z-index 3

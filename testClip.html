@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--Deshabilita el zoom de dispositivo Apple-->
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Test de Cliping Mask</title>
+	<style>
+		body {
+			margin: 0;
+			background: red;
+			width: 100%;
+			padding: 0;
+		}
+		.contenedor {
+			position: relative;
+			background: #3e79bd;
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+		.clip-cristo {
+			-webkit-clip-path: polygon(30% 0, 70% 0, 70% 15%, 100% 15%, 100% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 30%, 0 30%, 0 15%, 30% 15%);
+			clip-path: polygon(30% 0, 70% 0, 70% 15%, 100% 15%, 100% 30%, 70% 30%, 70% 100%, 30% 100%, 30% 30%, 0 30%, 0 15%, 30% 15%);
+		}
+		.cristo {
+			background: url('img/Cristo.png') no-repeat;
+			background-size: cover;
+			cursor: pointer;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin-left: -114px;
+			height: 228px;
+			width: 225px;
+			transition: all 0.5s ease;
+			z-index: 2;
+		}
+		.cristo:hover {
+			height: 288px;
+			width: 285px;
+			margin-left: -142.5px;
+		}
+		.modalBox {
+			display: none;
+			background: white;
+			box-shadow: 0 5px 25px 10px rgba(0,0,0,0.1);
+			height: 200px;
+			margin: 4em auto 0 auto;
+			overflow: hidden;
+			position: relative;
+			width: 600px;
+		}
+		.cristoModalImg {
+			background: url('img/cristo_redentor.png');
+			background-size: cover;
+			height: 200px;
+			width: 200px;
+			float: left;
+		}
+		.cerrar {
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			transition: opacity 0.3s ease;
+			right: 0;
+		}
+		.cerrar:hover, .cerrar:focus {
+			opacity: 0.75;
+		}
+		.modalBox p {
+			height: 5px;
+			position: absolute;
+			box-sizing: border-box;
+		}
+		.piramide {
+			background: url('img/piramide.png') no-repeat;
+			background-size: cover;
+			cursor: pointer;
+			position: absolute;
+			bottom: 45px;
+			left: 59%;
+			margin-left: -273.75px;
+			height: 234px;
+			width: 547.5px;
+			transition: all 0.5s ease;
+		}
+		.piramide:hover {
+			height: 264px;
+			width: 577px;
+			margin-left: -288.5px;
+		}
+		.clip-piramide {
+			-webkit-clip-path: polygon(35% 0, 65% 0, 65% 15%, 80% 50%, 100% 85%, 100% 100%, 0 100%, 0 85%, 20% 50%, 35% 15%);
+			clip-path: polygon(35% 0, 65% 0, 65% 15%, 80% 50%, 100% 85%, 100% 100%, 0 100%, 0 85%, 20% 50%, 35% 15%);
+		}
+		.advertencia {
+			display: none;
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			z-index: 99;
+			background: white;
+		}
+		.advertencia p {
+			line-height: 100vh;
+			text-align: center;
+			font-size: 32px;
+			font-weight: bold;
+		}
+		@media all and (orientation: portrait){
+			.advertencia {
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="advertencia">
+		<p>Por favor ponga la tableta de forma horizontal</p>
+	</div>
+	<div class="contenedor">
+		<div class="cristo clip-cristo"></div>
+		<div class="cristoModal modalBox">
+			<div class="cristoModalImg"></div>
+			<!-- <img src="img/cristo_redentor.png" alt=""> -->
+			<img src="img/modal_boton.png" alt="" class="cerrar">
+			<img src="img/bg_christ_redeemer.jpg" alt="Mapamundi">
+		</div>
+		<div class="piramide clip-piramide"></div>
+		<div class="piramideModal modalBox">
+			<div class="piramideModalImg"></div>
+			<p>
+				<a href="#" class="cerrar">X</a>
+				<h2>Piramide Cancun</h2>
+				Esto es un texto dentro del Modal Box
+			</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		var modalA = false;
+		$('.cristo').click(function(){
+			if(modalA){
+				$('.modalBox').fadeOut();
+				modalA = false;
+				setTimeout(function(){
+					$('.cristoModal').fadeIn();
+					modalA = true;
+				},600);
+			} else {
+				$('.cristoModal').fadeIn();
+				modalA = true;
+			}
+		});
+		$('.cerrar').click(function(){
+			$('.modalBox').fadeOut();
+			modalA = false;
+		});
+		$('.piramide').click(function(){
+			if(modalA) {
+				$('.modalBox').fadeOut();
+				modalA = false;
+				setTimeout(function(){
+					$('.piramideModal').fadeIn();
+					modalA = true;
+				}, 600);
+			} else {
+				$('.piramideModal').fadeIn();
+				modalA = true;
+			}
+		})
+	</script>
+</body>
+</html>

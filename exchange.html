@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="refresh" content="10"> -->
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<!--Deshabilita el zoom de dispositivo Apple-->
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Exchange Requests</title>
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Animaciones Optimizadas en CSS -->
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<div class="contenedorEx animated">
+		<!-- Botón para regresar al menú principal -->
+		<div class="botonMenu"></div>
+		<div class="pie01">
+			<section>
+				<h1>Total Resorts in the World</h1>
+				<article>
+					<div class="pieID pie">
+					</div>
+					<ul class="pieID legend">
+						<li class="b01">
+							<p>Inland Resorts</p>
+							<span>55</span>
+						</li>
+						<li class="b02">
+							<p>Ocean Front Resorts</p>
+							<span>10</span>
+						</li>
+						<li class="b03">
+							<p>Mountain/Sky Resorts</p>
+							<span>35</span>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+		<div class="pie02">
+			<section>
+				<h1>Ocean Resorts in the World</h1>
+				<article>
+					<div class="pieID2 pie2">
+					</div>
+					<ul class="pieID2 legend2">
+						<li class="b01">
+							<p>Mexico</p>
+							<span>26</span>
+						</li>
+						<li class="b02">
+							<p>Hawaii</p>
+							<span>14</span>
+						</li>
+						<li class="b03">
+							<p>Caribbean</p>
+							<span>16</span>
+						</li>
+						<li class="b04">
+							<p>Others</p>
+							<span>44</span>
+						</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+		<div class="subtitulo">
+			<p>Over 80% of all Exchange Requests in the World are for Ocean Front Resorts</p>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/exchangeF.js"></script>
+	<script src="js/exchangeFdos.js"></script>
+	<script>
+		$('.contenedorEx').addClass('fadeIn');
+		$('.contenedorEx').css('display', '-webkit-flex');
+		setTimeout(function(){
+			$('.pie01').fadeIn("slow");
+			setTimeout(function(){
+				$('.pie02').fadeIn("slow");
+			},500);
+		},1000);
+		$('.botonMenu').click(function(){
+			$('.contenedorEx').removeClass('fadeIn').addClass('fadeOut');
+			setTimeout(function(){
+				window.location.replace("index.html");
+			},250);
+		});
+	</script>
+</body>
+</html>

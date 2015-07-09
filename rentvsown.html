@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Rent vs Own</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="contenedorRent animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<section class="objetos">
+				<article class="rent animated">
+					<img src="img/rent.png" alt="">
+				</article>
+				<article class="memberS animated">
+					<img src="img/membership.png" alt="">
+				</article>
+			</section>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$('.contenedorRent').addClass('fadeIn');
+			setTimeout(function(){
+				$('.objetos').fadeIn();
+			},1000);
+			//funciones de cambio de imagen
+			var renta = true;
+			$('article').click(function(){
+				if(renta){
+					$('.rent').removeClass('zoomIn');
+					$('.rent').hide();
+					$('.memberS').show().addClass('zoomIn');
+					renta = false;
+				} else {
+					$('.memberS').removeClass('zoomIn');
+					$('.rent').show().addClass('zoomIn');
+					$('.memberS').hide();
+					renta = true;
+				}
+			});
+			$('.botonMenu').click(function(){
+				$('.contenedorRent').removeClass('fadeIn').addClass('fadeOut');
+				setTimeout(function(){
+					window.location.replace("index.html");
+				},250);
+			});
+		</script>
+	</body>
+</html>

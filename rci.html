@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>RCI</title>
+		<!-- Normalize -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<!-- Estilo -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="contenedorRci animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<!-- Botón para ir a Exchange.html -->
+			<div class="exchangeBtn"></div>
+			<section class="interRci">
+				<article class="fila01">
+					<img src="img/rci/rci_marriot.png" alt="">
+					<img src="img/rci/rci_starwood.png" alt="">
+					<img src="img/rci/rci_westgate.png" alt="">
+					<img src="img/rci/rci_omni_hotels.png" alt="">
+				</article>
+				<article class="fila02">
+					<img src="img/rci/rci_fourseasons.png" alt="">
+					<img src="img/rci/rci_sheraton.png" alt="" class="corto00">
+					<img src="img/rci/rci_westin.png" alt="" class="corto01">
+					<img src="img/rci/rci_hilton.png" alt="" class="corto02">
+					<img src="img/rci/rci_jwmarriot.png" alt="" class="corto03">
+				</article>
+				<article class="fila03">
+					<img src="img/rci/rci_st_regis.png" alt="">
+					<img src="img/rci/rci_crowne_plaza.png" alt="">
+					<img src="img/rci/rci_holiday_inn.png" alt="">
+					<img src="img/rci/rci_hyatt.png" alt="">
+				</article>
+			</section>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$('.contenedorRci').addClass('fadeIn');
+			setTimeout(function(){
+				$('.fila01').fadeIn(2500);
+				$('.fila01').addClass('animated slideInUp');
+				setTimeout(function(){
+					$('.fila02').fadeIn(2500);
+					$('.fila02').addClass('animated slideInUp');
+					setTimeout(function(){
+						$('.fila03').fadeIn(2500);
+						$('.fila03').addClass('animated slideInUp');
+					},500);
+				},500);
+			},1000);
+			$('.botonMenu').click(function(){
+				$('.contenedorRci').removeClass('fadeIn').addClass('fadeOut');
+				setTimeout(function(){
+					window.location.replace("index.html");
+				},250);
+			});
+			$('.exchangeBtn').click(function(){
+				$('.contenedorRci').removeClass('fadeIn').addClass('fadeOut');
+				setTimeout(function(){
+					window.location.replace("exchange.html");
+				},250);
+			});
+		</script>
+	</body>
+</html>

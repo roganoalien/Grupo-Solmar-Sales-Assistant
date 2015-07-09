@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- <meta http-equiv="refresh" content="10"> -->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--Deshabilita el zoom de dispositivo Apple-->
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<title>Fullscreen Slideshow test</title>
+		<!-- Animaciones Optimizadas en CSS -->
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/slide.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/jquery.slideme2.js"></script>
+		<link rel="stylesheet" href="css/slideme.css">
+		<style>
+			.botonMenu{
+				background: transparent;
+				cursor: pointer;
+				height: 125px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 400px;
+				z-index: 99;
+			}
+			.contenedorSlide {
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contenedorSlide animated">
+			<!-- Botón para regresar al menú principal -->
+			<div class="botonMenu"></div>
+			<div class="pleca">
+				<img src="img/pleca.png" alt="">
+			</div>
+			<div id="foo">
+				<ul class="slideme">
+					<li><img src="img/01.jpg" alt=""></li>
+					<li><img src="img/02.jpg" alt=""></li>
+					<li><img src="img/03.jpg" alt=""></li>
+					<li><img src="img/04.jpg" alt=""></li>
+					<li><img src="img/05.jpg" alt=""></li>
+					<li><img src="img/06.jpg" alt=""></li>
+					<li><img src="img/07.jpg" alt=""></li>
+					<li><img src="img/09.jpg" alt=""></li>
+					<li><img src="img/10.jpg" alt=""></li>
+					<li><img src="img/11.jpg" alt=""></li>
+					<li><img src="img/12.jpg" alt=""></li>
+					<li><img src="img/13.jpg" alt=""></li>
+					<li><img src="img/14.jpg" alt=""></li>
+					<li><img src="img/15.jpg" alt=""></li>
+					<li><img src="img/16.jpg" alt=""></li>
+					<li><img src="img/17.jpg" alt=""></li>
+					<li><img src="img/19.jpg" alt=""></li>
+					<li><img src="img/20.jpg" alt=""></li>
+					<li><img src="img/21.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$('.contenedorSlide').addClass('fadeIn');
+			$('#foo').slideme({
+				arrows            : false,
+				autoslide         : true,
+				interval          : 3000,
+				loop              : true,
+				resizable         : {
+					width         : 1024,
+					height        : 748,
+				},
+				speed             : 100,
+				transition        : 'fade'
+			});
+			$('.botonMenu').click(function(){
+				$('.contenedorSlide').removeClass('fadeIn').addClass('fadeOut');
+				setTimeout(function(){
+					window.location.replace("index.html");
+				},250);
+			});
+		</script>
+	</body>
+</html>
